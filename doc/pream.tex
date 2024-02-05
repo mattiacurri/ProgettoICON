@@ -1,0 +1,207 @@
+% basics
+\usepackage[utf8]{inputenc}
+
+\usepackage{textcomp}
+% \usepackage[dutch]{babel}
+\usepackage{url}
+% \usepackage{hyperref}
+% \hypersetup{
+%     colorlinks,
+%     linkcolor={black},
+%     citecolor={black},
+%     urlcolor={blue!80!black}
+% }
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{enumitem}
+% \usepackage{parskip}
+\usepackage{emptypage}
+\usepackage{subcaption}
+\usepackage{multicol}
+\usepackage[usenames,dvipsnames]{xcolor}
+
+% \usepackage{cmbright}
+
+\usepackage{amsmath, amsfonts, mathtools, amsthm, amssymb}
+\usepackage{mathrsfs}
+\usepackage{cancel}
+\usepackage{bm}
+\newcommand\N{\ensuremath{\mathbb{N}}}
+\newcommand\R{\ensuremath{\mathbb{R}}}
+\newcommand\Z{\ensuremath{\mathbb{Z}}}
+\renewcommand\O{\ensuremath{\emptyset}}
+\newcommand\Q{\ensuremath{\mathbb{Q}}}
+\newcommand\C{\ensuremath{\mathbb{C}}}
+\DeclareMathOperator{\sgn}{sgn}
+\usepackage{systeme}
+\let\svlim\lim\def\lim{\svlim\limits}
+\let\implies\Rightarrow
+\let\impliedby\Leftarrow
+\let\iff\Leftrightarrow
+\let\epsilon\varepsilon
+\usepackage{stmaryrd} % for \lightning
+\newcommand\contra{\scalebox{1.1}{$\lightning$}}
+% \let\phi\varphi
+% theorems
+\makeatother
+\usepackage{thmtools}
+\usepackage[framemethod=TikZ]{mdframed}
+\mdfsetup{skipabove=1em,skipbelow=0em}
+
+\definecolor{geyecolor}{RGB}{199,237,204}%
+\theoremstyle{definition}
+
+\declaretheoremstyle[
+    headfont=\bfseries\sffamily\color{ForestGreen!70!black}, 
+    numbered=no,
+    mdframed={
+        linewidth=3pt,
+        rightline=false, topline=false, bottomline=false,
+        linecolor=ForestGreen, backgroundcolor=ForestGreen!1,
+    }
+]{thmgreenbox}
+
+\declaretheoremstyle[
+    headfont=\bfseries\sffamily\color{NavyBlue!70!black}, 
+    numbered=no,
+    mdframed={
+        linewidth=2pt,
+        rightline=false, topline=false, bottomline=false,
+        linecolor=NavyBlue, backgroundcolor=NavyBlue!1,
+    }
+]{thmbluebox}
+
+% Algoritmo.
+\declaretheoremstyle[
+    headfont=\bfseries\sffamily\color{OliveGreen!70!black}, 
+    numbered=no,
+    mdframed={
+        linewidth=2pt,
+        rightline=false, topline=false, bottomline=false,
+        linecolor=OliveGreen, backgroundcolor=OliveGreen!1,
+    }
+]{thmorangealgo}
+
+\declaretheoremstyle[
+    headfont=\bfseries\sffamily\color{NavyBlue!70!black},
+    numbered=no, 
+    mdframed={
+        linewidth=2pt,
+        rightline=false, topline=false, bottomline=false,
+        linecolor=NavyBlue
+    }
+]{thmblueline}
+
+\declaretheoremstyle[
+    headfont=\bfseries\sffamily\color{RawSienna!70!black}, 
+    mdframed={
+        linewidth=2pt,
+        rightline=false, topline=false, bottomline=false,
+        linecolor=RawSienna, backgroundcolor=RawSienna!1,
+    }
+]{thmredbox}
+
+\declaretheoremstyle[
+    headfont=\bfseries\sffamily\color{RawSienna!70!black}, 
+    numbered=no,
+    mdframed={
+        linewidth=2pt,
+        rightline=false, topline=false, bottomline=false,
+        linecolor=RawSienna, backgroundcolor=RawSienna!1,
+    },
+]{thmproofbox}
+
+\declaretheoremstyle[
+    headfont=\bfseries\sffamily\color{NavyBlue!70!black}, 
+    numbered=no,
+    mdframed={
+        linewidth=2pt,
+        rightline=false, topline=false, bottomline=false,
+        linecolor=NavyBlue, backgroundcolor=NavyBlue!1,
+    },
+]{thmexplanationbox}
+
+
+\declaretheorem[style=thmgreenbox, name=Definizione]{definition}
+\declaretheorem[style=thmbluebox, numbered=no, name=Esempio]{es}
+\declaretheorem[style=thmbluebox, numbered=no, name=Conseguenza]{conseguenza}
+\declaretheorem[style=thmredbox, name=Proposizione]{prop}
+\declaretheorem[style=thmredbox, numbered=no, name=Interpretazione]{interpretazione}
+\declaretheorem[style=thmredbox, name=Teorema]{theorem}
+\declaretheorem[style=thmredbox, name=Esercizio]{esercizio}
+\declaretheorem[style=thmorangealgo, name=Soluzione]{sol}
+\declaretheorem[style=thmredbox, numbered=no, name=Lemma]{lemma}
+\declaretheorem[style=thmredbox, numbered=no, name=Corollario]{corollary}
+\declaretheorem[style=thmorangealgo, numbered=no, name=Algoritmo]{algo}
+
+\declaretheorem[style=thmproofbox, name=Dimostrazione]{replacementproof}
+\renewenvironment{proof}[1][\proofname]{\vspace{-10pt}\begin{replacementproof}}{\end{replacementproof}}
+
+
+\declaretheorem[style=thmexplanationbox, name=Dimostrazione]{tmpexplanation}
+\newenvironment{explanation}[1][]{\vspace{-10pt}\begin{tmpexplanation}}{\end{tmpexplanation}}
+
+\declaretheorem[style=thmblueline, numbered=no, name=Ricorda]{remark}
+\declaretheorem[style=thmblueline, numbered=no, name=Nota]{note}
+\declaretheorem[style=thmblueline, numbered=no, name=Osservazione]{obs}
+
+\newtheorem*{uovt}{UOVT}
+\newtheorem*{notation}{Notation}
+\newtheorem*{previouslyseen}{As previously seen}
+\newtheorem*{problem}{Problem}
+\newtheorem*{observe}{Observe}
+\newtheorem*{property}{Property}
+\newtheorem*{intuition}{Intuition}
+
+
+\usepackage{etoolbox}
+\AtEndEnvironment{vb}{\null\hfill$\diamond$}%
+\AtEndEnvironment{intermezzo}{\null\hfill$\diamond$}%
+% \AtEndEnvironment{opmerking}{\null\hfill$\diamond$}%
+
+% http://tex.stackexchange.com/questions/22119/how-can-i-change-the-spacing-before-theorems-with-amsthm
+\makeatletter
+% \def\thm@space@setup{%
+%   \thm@preskip=\parskip \thm@postskip=0pt
+% }
+
+\newcommand{\oefening}[1]{%
+    \def\@oefening{#1}%
+    \subsection*{Oefening #1}
+}
+
+\newcommand{\suboefening}[1]{%
+    \subsubsection*{Oefening \@oefening.#1}
+}
+
+\newcommand{\exercise}[1]{%
+    \def\@exercise{#1}%
+    \subsection*{Exercise #1}
+}
+
+\newcommand{\subexercise}[1]{%
+    \subsubsection*{Exercise \@exercise.#1}
+}
+
+
+\usepackage{xifthen}
+
+\def\testdateparts#1{\dateparts#1\relax}
+\def\dateparts#1 #2 #3 #4 #5\relax{
+    \marginpar{\small\textsf{\mbox{#1 #2 #3 #5}}}
+}
+
+\def\@lesson{}%
+\newcommand{\lesson}[3]{
+    \ifthenelse{\isempty{#3}}{%
+        \def\@lesson{Lecture #1}%
+    }{%
+        \def\@lesson{Lecture #1: #3}%
+    }%
+    \subsection*{\@lesson}
+    \testdateparts{#2}
+}
+
+% \renewcommand\date[1]{\marginpar{#1}}
+
