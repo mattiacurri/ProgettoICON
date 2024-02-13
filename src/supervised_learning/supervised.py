@@ -1,7 +1,9 @@
+import numpy as np
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from imblearn.pipeline import Pipeline, make_pipeline
+from imblearn.metrics import classification_report_imbalanced
 from plot import visualizeMetricsGraphs, plot_learning_curves
 from sklearn.model_selection import (
     GridSearchCV,
@@ -10,6 +12,11 @@ from sklearn.model_selection import (
 )
 from sklearn.tree import DecisionTreeClassifier
 from xgboost import XGBClassifier
+from sklearn_genetic import GASearchCV
+from sklearn_genetic.space import Continuous, Categorical, Integer
+from sklearn_genetic.plots import plot_fitness_evolution, plot_search_space
+import matplotlib.pyplot as plt
+from pprint import pprint
 
 def returnBestHyperparameters(dataset, differentialColumn):
     # Cross Validation Strategy (Repeated Stratified K-Fold) with 5 splits and 2 repeats and a random state of 42 for reproducibility
@@ -66,10 +73,43 @@ def returnBestHyperparameters(dataset, differentialColumn):
     )
     SMOTENC([0, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], sampling_strategy="all", random_state=42))
     """
+    KNeighboursHyperparameterss = {
+        "n_neighbors": Integer(1, 3),
+        "weights": Categorical(["uniform", "distance"]),
+        "algorithm": Categorical(["ball_tree", "kd_tree"]),
+        "leaf_size": Integer(1, 3),
+        "p": Integer(1, 3),
+    }
 
     # GridSearchCV for each model with the respective hyperparameters
     # we aim to maximize balanced_accuracy score for each model because of the imbalanced dataset
     # balanced accuracy is the arithmetic mean of sensitivity and specificity
+    '''geneticSearchCV_knn = GASearchCV(
+        estimator=knn,
+        cv=CV,
+        param_grid=KNeighboursHyperparameterss,
+        scoring="balanced_accuracy",
+        verbose=3,
+        n_jobs=-1,
+        population_size=10,
+        crossover_probability=0.7,
+        mutation_probability=0.3,
+        algorithm="eaMuPlusLambda",
+        keep_top_k=3,
+        elitism=True,
+        tournament_size=5,
+        criteria="max",
+        generations=10,
+    )
+
+    geneticSearchCV_knn.fit(X_train, y_train)
+
+    plot_fitness_evolution(geneticSearchCV_knn)
+    plt.show()
+
+
+    print(geneticSearchCV_knn.best_params_)'''
+
     gridSearchCV_xgb = GridSearchCV(
         Pipeline([("XGBoost", xgb)]),
         XGBoostHyperparameters,
@@ -165,7 +205,7 @@ def returnBestHyperparameters(dataset, differentialColumn):
             "RandomForest__criterion"
         ],
     }
-    return bestParameters
+    return bestParameters, X_train, X_test, y_train, y_test
 
 
 def trainModelKFold(dataSet, differentialColumn):
@@ -195,9 +235,12 @@ def trainModelKFold(dataSet, differentialColumn):
             "f1": [],
         },
     }
-    bestParameters = returnBestHyperparameters(dataSet, differentialColumn)
+    bestParameters, X_train, X_test, y_train, y_test = returnBestHyperparameters(dataSet, differentialColumn)
     # print bestParameters in blue
-    print("\033[94m" + str(bestParameters) + "\033[0m")
+    print("\033[94m")
+    pprint(bestParameters)
+    print("\033[0m")
+    # print("\033[94m" + str(bestParameters) + "\033[0m")
     X = dataSet.drop(differentialColumn, axis=1).to_numpy()
     y = dataSet[differentialColumn].to_numpy()
 
@@ -301,7 +344,8 @@ def trainModelKFold(dataSet, differentialColumn):
     # Visualizing the metrics for each model
     mean_accuracy, mean_precision, mean_recall, mean_f1 = visualizeMetricsGraphs(model,
                                                                                  "Punteggio Medio per ogni modello")
-    return model, mean_accuracy, mean_precision, mean_recall, mean_f1
+    return model, X_train, X_test, y_train, y_test, bestParameters
+
 
 file_path = "../../data/dataset_preprocessed.csv"
 
@@ -313,5 +357,138 @@ X = df.drop(columns=["Rating"])
 
 y = df["Rating"]
 
-model, mean_accuracy, mean_precision, mean_recall, mean_f1 = trainModelKFold(df, differentialColumn)
+model, X_train, X_test, y_train, y_test, bestParameters = trainModelKFold(df, differentialColumn)
+
+# try to predict the test set
+
+knn = KNeighborsClassifier(
+    n_neighbors=bestParameters["KNearestNeighbors__n_neighbors"],
+    weights=bestParameters["KNearestNeighbors__weights"],
+    algorithm=bestParameters["KNearestNeighbors__algorithm"],
+    leaf_size=bestParameters["KNearestNeighbors__leaf_size"],
+    p=bestParameters["KNearestNeighbors__p"],
+    n_jobs=-1,
+)
+dtc = DecisionTreeClassifier(
+    criterion=bestParameters["DecisionTree__criterion"],
+    splitter="best",
+    max_depth=bestParameters["DecisionTree__max_depth"],
+    min_samples_split=bestParameters["DecisionTree__min_samples_split"],
+    min_samples_leaf=bestParameters["DecisionTree__min_samples_leaf"],
+)
+rfc = RandomForestClassifier(
+    n_estimators=bestParameters["RandomForest__n_estimators"],
+    max_depth=bestParameters["RandomForest__max_depth"],
+    min_samples_split=bestParameters["RandomForest__min_samples_split"],
+    min_samples_leaf=bestParameters["RandomForest__min_samples_leaf"],
+    criterion=bestParameters["RandomForest__criterion"],
+    n_jobs=-1,
+    random_state=42,
+)
+xgb = XGBClassifier(
+    learning_rate=bestParameters["XGBoost__learning_rate"],
+    max_depth=bestParameters["XGBoost__max_depth"],
+    n_estimators=bestParameters["XGBoost__n_estimators"],
+    reg_lambda=bestParameters["XGBoost__lambda"],
+    n_jobs=-1,
+    random_state=42,
+)
+
+knn.fit(X_train, y_train)
+dtc.fit(X_train, y_train)
+rfc.fit(X_train, y_train)
+xgb.fit(X_train, y_train)
+
+y_pred_knn = knn.predict(X_test)
+y_pred_dtc = dtc.predict(X_test)
+y_pred_rfc = rfc.predict(X_test)
+y_pred_xgb = xgb.predict(X_test)
+
+# print the confusion matrix for each model
+
+from sklearn.metrics import classification_report
+
+print("KNearestNeighbors Classification Report: ")
+
+print(classification_report(y_test, y_pred_knn))
+
+print("DecisionTree Classification Report: ")
+
+print(classification_report(y_test, y_pred_dtc))
+
+print("RandomForest Classification Report: ")
+
+print(classification_report(y_test, y_pred_rfc))
+
+print("XGBoost Classification Report: ")
+
+print(classification_report(y_test, y_pred_xgb))
+
+# print the imbalanced classification report
+
+print("KNearestNeighbors Imbalanced Classification Report: ")
+
+print(classification_report_imbalanced(y_test, y_pred_knn))
+
+print("DecisionTree Imbalanced Classification Report: ")
+
+print(classification_report_imbalanced(y_test, y_pred_dtc))
+
+print("RandomForest Imbalanced Classification Report: ")
+
+print(classification_report_imbalanced(y_test, y_pred_rfc))
+
+print("XGBoost Imbalanced Classification Report: ")
+
+print(classification_report_imbalanced(y_test, y_pred_xgb))
+
+from sklearn.metrics import ConfusionMatrixDisplay
+
+
+# plot the confusion matrix for each model
+
+ConfusionMatrixDisplay.from_estimator(knn, X_test, y_test, display_labels=knn.classes_, cmap="summer")
+plt.title("KNN Confusion Matrix")
+plt.show()
+
+ConfusionMatrixDisplay.from_estimator(dtc, X_test, y_test, display_labels=dtc.classes_, cmap="summer")
+plt.title("Decision Tree Confusion Matrix")
+plt.show()
+
+ConfusionMatrixDisplay.from_estimator(rfc, X_test, y_test, display_labels=rfc.classes_, cmap="summer")
+plt.title("RandomForest Confusion Matrix")
+plt.show()
+
+ConfusionMatrixDisplay.from_estimator(xgb, X_test, y_test, display_labels=xgb.classes_, cmap="summer")
+plt.title("XGBoost Confusion Matrix")
+plt.show()
+
+
+# plot the feature importances for each model
+
+models = [dtc, rfc, xgb]
+names = ["DecisionTree", "RandomForest", "XGBoost"]
+
+for i, m in enumerate(models):
+
+    m.fit(X_train, y_train)
+
+    importances = m.feature_importances_
+
+    indices = np.argsort(importances)[::-1]
+
+    plt.figure(figsize=(15, 15))
+
+    plt.title(f"{names[i]} Feature Importances")
+
+    # horizontal bar plot
+
+    plt.barh(range(X_train.shape[1]), importances[indices], align="center")
+
+    plt.yticks(range(X_train.shape[1]), [X_train.columns[i] for i in indices])
+
+    plt.xlabel("Relative Importance")
+
+    plt.show()
+
 
