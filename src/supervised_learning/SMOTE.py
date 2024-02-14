@@ -1,5 +1,6 @@
 from pprint import pprint
 
+import numpy as np
 import pandas as pd
 from imblearn.metrics import classification_report_imbalanced
 from sklearn.ensemble import RandomForestClassifier
@@ -21,6 +22,7 @@ from xgboost import XGBClassifier
 from supervised import sturgeRule
 from sklearn.base import TransformerMixin, BaseEstimator
 
+
 class Nothing(BaseEstimator, TransformerMixin):
 
     def transform(self, data):
@@ -28,6 +30,7 @@ class Nothing(BaseEstimator, TransformerMixin):
 
     def fit(self, data, y=None, **fit_params):
         return self
+
 
 class Debugger(BaseEstimator, TransformerMixin):
 
@@ -210,8 +213,15 @@ def trainModelKFold(dataSet, differentialColumn, samplingPipe, debug=False):
             "recall": [],
             "f1": [],
         },
+        "LightGBM": {
+            "accuracy": [],
+            "precision": [],
+            "recall": [],
+            "f1": [],
+        },
     }
-    bestParameters, X_train, y_train, X_test, y_test = returnBestHyperparameters(dataSet, differentialColumn, samplingPipe, debug=debug)
+    bestParameters, X_train, y_train, X_test, y_test = returnBestHyperparameters(dataSet, differentialColumn,
+                                                                                 samplingPipe, debug=debug)
 
     print("\033[94m")
     pprint(bestParameters)
@@ -220,6 +230,16 @@ def trainModelKFold(dataSet, differentialColumn, samplingPipe, debug=False):
     X = dataSet.drop(differentialColumn, axis=1).to_numpy()
     y = dataSet[differentialColumn].to_numpy()
 
+    lgbm = Pipeline([samplingPipe[0], samplingPipe[1], samplingPipe[2], ("LGBMClassifier", LGBMClassifier(
+        learning_rate=bestParameters["LGBM__learning_rate"],
+        max_depth=bestParameters["LGBM__max_depth"],
+        n_estimators=bestParameters["LGBM__n_estimators"],
+        reg_lambda=bestParameters["LGBM__lambda"],
+        num_leaves=bestParameters["LGBM__num_leaves"],
+        min_gain_to_split=bestParameters["LGBM__min_gain_to_split"],
+        verbose=bestParameters["LGBM__verbose"],
+        n_jobs=-1,
+    ))])
     knn = Pipeline([samplingPipe[0], samplingPipe[1], samplingPipe[2],
                     ('KNeighborsClassifier', KNeighborsClassifier(
                         n_neighbors=bestParameters["KNearestNeighbors__n_neighbors"],
@@ -260,20 +280,30 @@ def trainModelKFold(dataSet, differentialColumn, samplingPipe, debug=False):
     cv = RepeatedStratifiedKFold(n_splits=sturgeRule(X_train.shape[0]), n_repeats=2, random_state=42)
     scoring_metrics = ["balanced_accuracy", "precision_weighted", "recall_weighted", "f1_weighted"]
 
+    print(X.shape, y.shape)
+    Xs, ys = samplingPipe[1][1].fit_resample(X, y)
+    print(Xs.shape, ys.shape)
     results_dtc = {}
     results_rfc = {}
     results_knn = {}
     results_xgb = {}
-
-    print(X.shape, y.shape)
-    Xs, ys = samplingPipe[1][1].fit_resample(X, y)
-    print(Xs.shape, ys.shape)
+    results_lgbm = {}
 
     for metric in scoring_metrics:
-        scores_dtc = cross_val_score(dtc, Xs, ys, scoring=metric, cv=cv, n_jobs=-1)
-        scores_rfc = cross_val_score(rfc, Xs, ys, scoring=metric, cv=cv, n_jobs=-1)
-        scores_knn = cross_val_score(knn, Xs, ys, scoring=metric, cv=cv, n_jobs=-1)
-        scores_xgb = cross_val_score(xgb, Xs, ys, scoring=metric, cv=cv, n_jobs=-1)
+        # Cross Validation for each model with the scoring metric and the cross validation strategy
+        scores_lgbm = cross_val_score(
+            lgbm, X, y, scoring=metric, cv=cv, n_jobs=-1,
+        )
+        scores_dtc = cross_val_score(
+            dtc, X, y, scoring=metric, cv=cv, n_jobs=-1,
+        )
+        scores_rfc = cross_val_score(
+            rfc, X, y, scoring=metric, cv=cv, n_jobs=-1
+        )
+        scores_knn = cross_val_score(
+            knn, X, y, scoring=metric, cv=cv, n_jobs=-1
+        )
+        scores_xgb = cross_val_score(xgb, X, y, scoring=metric, cv=cv, n_jobs=-1)
 
         print("\033[94m")
         print(f"Metric: {metric}")
@@ -281,12 +311,19 @@ def trainModelKFold(dataSet, differentialColumn, samplingPipe, debug=False):
         print(f"RandomForest: {scores_rfc.mean()}")
         print(f"KNearestNeighbors: {scores_knn.mean()}")
         print(f"XGBoost: {scores_xgb.mean()}")
+        print(f"LightGBM: {scores_lgbm.mean()}")
         print("\033[0m")
-
         results_dtc[metric] = scores_dtc
         results_knn[metric] = scores_knn
         results_rfc[metric] = scores_rfc
         results_xgb[metric] = scores_xgb
+        results_lgbm[metric] = scores_lgbm
+
+    # Storing the results for each model
+    model["LightGBM"]["accuracy_list"] = results_lgbm["balanced_accuracy"]
+    model["LightGBM"]["precision_list"] = results_lgbm["precision_weighted"]
+    model["LightGBM"]["recall_list"] = results_lgbm["recall_weighted"]
+    model["LightGBM"]["f1"] = results_lgbm["f1_weighted"]
 
     model["XGBoost"]["accuracy_list"] = results_xgb["balanced_accuracy"]
     model["XGBoost"]["precision_list"] = results_xgb["precision_weighted"]
@@ -308,12 +345,16 @@ def trainModelKFold(dataSet, differentialColumn, samplingPipe, debug=False):
     model["KNearestNeighbors"]["recall_list"] = results_knn["recall_weighted"]
     model["KNearestNeighbors"]["f1"] = results_knn["f1_weighted"]
 
-    plot_learning_curves(xgb, Xs, ys, differentialColumn, samplingPipe[1][0], "XGBoost", cv)
-    plot_learning_curves(knn, Xs, ys, differentialColumn, samplingPipe[1][0], "KNearestNeighbors", cv)
-    plot_learning_curves(dtc, Xs, ys, differentialColumn, samplingPipe[1][0], "DecisionTree", cv)
-    plot_learning_curves(rfc, Xs, ys, differentialColumn, samplingPipe[1][0], "RandomForest", cv)
-    visualizeMetricsGraphs(model, "Punteggio medio con " + str(samplingPipe[1][0]))
-    return model, rfc, dtc, knn, xgb, X_test, y_test, X_train, y_train
+    # Plotting the learning curves for each model
+    plot_learning_curves(xgb, X, y, differentialColumn, "XGBoost", samplingPipe[1][0], cv)
+    plot_learning_curves(knn, X, y, differentialColumn, "KNearestNeighbors", samplingPipe[1][0], cv)
+    plot_learning_curves(dtc, X, y, differentialColumn, "DecisionTree", samplingPipe[1][0], cv)
+    plot_learning_curves(rfc, X, y, differentialColumn, "RandomForest", samplingPipe[1][0], cv)
+    plot_learning_curves(lgbm, X, y, differentialColumn, "LightGBM", samplingPipe[1][0], cv)
+
+    # Visualizing the metrics for each model
+    visualizeMetricsGraphs(model, "Punteggio Medio per ogni modello con " + str(samplingPipe[0][0]))
+    return model, rfc, dtc, knn, xgb, lgbm, X_test, y_test, X_train, y_train
 
 
 # import dataset
@@ -356,19 +397,16 @@ samplingPipes = [("SMOTE", smote)]
 
 df = df.drop_duplicates()
 print(df["Rating"].value_counts())
-#print(df.shape)
+# print(df.shape)
 
 for sPipe in samplingPipes:
     print("\033[94m")
     print("TRAINING CON:", sPipe[0])
     print("\033[0m")
-    model, rfc, dtc, knn, xgb, X_test, y_test, X_train, y_train = trainModelKFold(df, differentialColumn, sPipe, False)
+    model, rfc, dtc, knn, xgb, lgmb, X_test, y_test, X_train, y_train = trainModelKFold(df, differentialColumn, sPipe,
+                                                                                        False)
 
-    knn.fit(X_train, y_train)
-    dtc.fit(X_train, y_train)
-    rfc.fit(X_train, y_train)
-    xgb.fit(X_train, y_train)
-
+    y_pred_lgmb = lgmb.predict(X_test)
     y_pred_knn = knn.predict(X_test)
     y_pred_dtc = dtc.predict(X_test)
     y_pred_rfc = rfc.predict(X_test)
@@ -378,56 +416,90 @@ for sPipe in samplingPipes:
 
     from sklearn.metrics import classification_report
 
-    print(f"KNearestNeighbors {sPipe[0]} Classification Report: ")
+    # save to file
 
-    print(classification_report(y_test, y_pred_knn))
+    f = open("../../classification_report.txt", "w")
 
-    print(f"DecisionTree {sPipe[0]} Classification Report: ")
+    f.write(f"LightGBM {sPipe[0]} Classification Report: \n")
 
-    print(classification_report(y_test, y_pred_dtc))
+    f.write(classification_report(y_test, y_pred_lgmb))
 
-    print(f"RandomForest {sPipe[0]} Classification Report: ")
+    f.write(f"KNN {sPipe[0]} Classification Report: \n")
 
-    print(classification_report(y_test, y_pred_rfc))
+    f.write(classification_report(y_test, y_pred_knn))
 
-    print(f"XGBoost {sPipe[0]} Classification Report: ")
+    f.write(f"DecisionTree {sPipe[0]} Classification Report: \n")
 
-    print(classification_report(y_test, y_pred_xgb))
+    f.write(classification_report(y_test, y_pred_dtc))
 
-    # print the imbalanced classification report
+    f.write(f"RandomForest {sPipe[0]} Classification Report: \n")
 
-    print(f"KNearestNeighbors {sPipe[0]} Imbalanced Classification Report: ")
+    f.write(classification_report(y_test, y_pred_rfc))
 
-    print(classification_report_imbalanced(y_test, y_pred_knn))
+    f.write(f"XGBoost {sPipe[0]} Classification Report: \n")
 
-    print(f"DecisionTree {sPipe[0]} Imbalanced Classification Report: ")
+    f.write(classification_report(y_test, y_pred_xgb))
 
-    print(classification_report_imbalanced(y_test, y_pred_dtc))
-
-    print(f"RandomForest {sPipe[0]} Imbalanced Classification Report: ")
-
-    print(classification_report_imbalanced(y_test, y_pred_rfc))
-
-    print(f"XGBoost {sPipe[0]} Imbalanced Classification Report: ")
-
-    print(classification_report_imbalanced(y_test, y_pred_xgb))
+    f.close()
 
     from sklearn.metrics import ConfusionMatrixDisplay
 
     # plot the confusion matrix for each model
 
+    ConfusionMatrixDisplay.from_estimator(lgmb, X_test, y_test, display_labels=lgmb.classes_, cmap="summer")
+    plt.title("LightGBM Confusion Matrix")
+
+    # sae to file
+
+    plt.savefig(f'../../plots/confusion_matrix_LightGBM.png')
+    plt.show()
+
     ConfusionMatrixDisplay.from_estimator(knn, X_test, y_test, display_labels=knn.classes_, cmap="summer")
-    plt.title(f"KNN {sPipe[0]} Confusion Matrix")
+    plt.title("KNN Confusion Matrix")
+    plt.savefig(f'../../plots/confusion_matrix_KNN.png')
     plt.show()
 
     ConfusionMatrixDisplay.from_estimator(dtc, X_test, y_test, display_labels=dtc.classes_, cmap="summer")
-    plt.title(f"Decision Tree {sPipe[0]} Confusion Matrix")
+    plt.title("Decision Tree Confusion Matrix")
+    plt.savefig(f'../../plots/confusion_matrix_DecisionTree.png')
     plt.show()
 
     ConfusionMatrixDisplay.from_estimator(rfc, X_test, y_test, display_labels=rfc.classes_, cmap="summer")
-    plt.title(f"RandomForest {sPipe[0]} Confusion Matrix")
+    plt.title("RandomForest Confusion Matrix")
+    plt.savefig(f'../../plots/confusion_matrix_RandomForest.png')
     plt.show()
 
     ConfusionMatrixDisplay.from_estimator(xgb, X_test, y_test, display_labels=xgb.classes_, cmap="summer")
-    plt.title(f"XGBoost {sPipe[0]} Confusion Matrix")
+    plt.title("XGBoost Confusion Matrix")
+    plt.savefig(f'../../plots/confusion_matrix_XGBoost.png')
     plt.show()
+
+    # plot the feature importances for each model
+
+    models = [dtc, rfc, xgb, lgmb]
+    names = ["DecisionTree", "RandomForest", "XGBoost", "LightGBM"]
+
+    for i, m in enumerate(models):
+        m.fit(X_train, y_train)
+
+        importances = m.feature_importances_
+
+        indices = np.argsort(importances)[::-1]
+
+        plt.figure(figsize=(15, 15))
+
+        plt.title(f"{names[i]} Feature Importances for {sPipe[0]}")
+
+        # horizontal bar plot
+
+        plt.barh(range(X_train.shape[1]), importances[indices], align="center")
+
+        plt.yticks(range(X_train.shape[1]), [X_train.columns[i] for i in indices])
+
+        plt.xlabel("Relative Importance")
+
+        # save to file
+
+        plt.savefig(f'../../plots/feature_importances_{names[i]}_{sPipe[0]}.png')
+
+        plt.show()
