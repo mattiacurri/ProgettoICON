@@ -472,49 +472,30 @@ f.write("XGBoost Classification Report: \n")
 
 f.write(classification_report(y_test, y_pred_xgb))
 
-f.close()
-
-print("LightGBM Classification Report: ")
-
-print(classification_report(y_test, y_pred_lgmb))
-
-print("KNearestNeighbors Classification Report: ")
-
-print(classification_report(y_test, y_pred_knn))
-
-print("DecisionTree Classification Report: ")
-
-print(classification_report(y_test, y_pred_dtc))
-
-print("RandomForest Classification Report: ")
-
-print(classification_report(y_test, y_pred_rfc))
-
-print("XGBoost Classification Report: ")
-
-print(classification_report(y_test, y_pred_xgb))
 
 # print the imbalanced classification report
 
 print("LightGBM Imbalanced Classification Report: ")
-
-print(classification_report_imbalanced(y_test, y_pred_lgmb))
+f.write("LightGBM Imbalanced Classification Report: \n")
+f.write(classification_report_imbalanced(y_test, y_pred_lgmb))
 
 print("KNearestNeighbors Imbalanced Classification Report: ")
-
-print(classification_report_imbalanced(y_test, y_pred_knn))
+f.write("KNearestNeighbors Imbalanced Classification Report: \n")
+f.write(classification_report_imbalanced(y_test, y_pred_knn))
 
 print("DecisionTree Imbalanced Classification Report: ")
-
-print(classification_report_imbalanced(y_test, y_pred_dtc))
+f.write("DecisionTree Imbalanced Classification Report: \n")
+f.write(classification_report_imbalanced(y_test, y_pred_dtc))
 
 print("RandomForest Imbalanced Classification Report: ")
-
-print(classification_report_imbalanced(y_test, y_pred_rfc))
+f.write("RandomForest Imbalanced Classification Report: \n")
+f.write(classification_report_imbalanced(y_test, y_pred_rfc))
 
 print("XGBoost Imbalanced Classification Report: ")
+f.write("XGBoost Imbalanced Classification Report: \n")
+f.write(classification_report_imbalanced(y_test, y_pred_xgb))
 
-print(classification_report_imbalanced(y_test, y_pred_xgb))
+f.close()
 
 from sklearn.metrics import ConfusionMatrixDisplay
 
