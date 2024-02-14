@@ -4,9 +4,14 @@ from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_sc
 from sklearn.model_selection import learning_curve
 
 
-#Funzione che mostra la curva di apprendimento per ogni modello
-def plot_learning_curves(model, X, y, differentialColumn, model_name, cv, scoring='balanced_accuracy'):
-    train_sizes, train_scores, test_scores = learning_curve(model, X, y, cv=cv, scoring=scoring, n_jobs=-1, random_state=42, shuffle=True)
+# Funzione che mostra la curva di apprendimento per ogni modello
+def plot_learning_curves(model, X, y, differentialColumn, model_name, method_name, cv, scoring='balanced_accuracy'):
+    train_sizes, train_scores, test_scores = learning_curve(model, X, y, cv=cv, scoring=scoring, n_jobs=-1,
+                                                            random_state=42)
+    #for train_size, cv_train_scores, cv_test_scores in zip(train_sizes, train_scores, test_scores):
+        #print(f"{train_size} samples were used to train the model")
+        #print(f"The average train accuracy is {cv_train_scores.mean():.2f}")
+        #print(f"The average test accuracy is {cv_test_scores.mean():.2f}")
 
     # Calcola gli errori su addestramento e test
     train_errors = 1 - train_scores
@@ -18,24 +23,36 @@ def plot_learning_curves(model, X, y, differentialColumn, model_name, cv, scorin
     train_errors_var = np.var(train_errors, axis=1)
     test_errors_var = np.var(test_errors, axis=1)
 
+    # Salva su file i valori numerici della deviazione standard e della varianza
+    file = open(f'../../plots/learning_curve_{model_name}_{method_name}.txt', 'w')
+    file.write(f"Train Error Std: {train_errors_std[-1]}\n")
+    file.write(f"Test Error Std: {test_errors_std[-1]}\n")
+    file.write(f"Train Error Var: {train_errors_var[-1]}\n")
+    file.write(f"Test Error Var: {test_errors_var[-1]}\n")
+    file.close()
 
-    # Stampa i valori numerici della deviazione standard e della varianza
+    # Stampare su terminale la deviazione standard e la varianza
     print(
-        f"\033[95m{model_name} - Train Error Std: {train_errors_std[-1]}, Test Error Std: {test_errors_std[-1]}, Train Error Var: {train_errors_var[-1]}, Test Error Var: {test_errors_var[-1]}\033[0m")
+        f"\033[94m{model_name} - Train Error Std: {train_errors_std[-1]}, Test Error Std: {test_errors_std[-1]}, Train Error Var: {train_errors_var[-1]}, Test Error Var: {test_errors_var[-1]}\033[0m")
 
     # Calcola gli errori medi su addestramento e test
     mean_train_errors = 1 - np.mean(train_scores, axis=1)
     mean_test_errors = 1 - np.mean(test_scores, axis=1)
 
-    #Visualizza la curva di apprendimento
+    # Visualizza la curva di apprendimento
     plt.plot(train_sizes, mean_train_errors, label='Errore di training', color='green')
     plt.plot(train_sizes, mean_test_errors, label='Errore di testing', color='red')
-    plt.title(f'Curva di apprendimento per {model_name}')
-    plt.ylim(0, 1)
+    plt.title(f'Curva di apprendimento per {model_name} con {method_name}')
+    # plt.ylim(0, 1)
     plt.xlabel('Dimensione del training set')
     plt.ylabel('Errore')
     plt.legend()
+
+    # save plot to file
+    plt.savefig(f'../../plots/learning_curve_{model_name}_{method_name}.png')
+
     plt.show()
+
 
 def visualizeAspectRatioChart(dataSet, differentialColumn, title):
     # Conta le occorrenze per ciascun valore unico di differentialColumn
@@ -56,14 +73,15 @@ def visualizeAspectRatioChart(dataSet, differentialColumn, title):
         "lightcoral",
         "lightpink",
     ]
-    # lunga lista di colori per evitare ripetizioni in caso di molti valori unici
+
     fig, ax = plt.subplots(figsize=(8, 8))
-    '''wedges, texts, autotexts = ax.pie(
+    wedges, texts, autotexts = ax.pie(
         counts, labels=labels, colors=colors, autopct="%1.1f%%", startangle=90
-    )'''
+    )
     ax.legend(labels, loc="lower left", fontsize="small")
     plt.title(title)
     plt.show()
+
 
 # Funzione che visualizza i grafici delle metriche per ogni modello
 def visualizeMetricsGraphs(model, title):
@@ -121,9 +139,13 @@ def visualizeMetricsGraphs(model, title):
     # allontana la legenda
     plt.legend(loc="lower left", fontsize="small")
 
+    # save to file
+    plt.savefig(f'../../plots/metrics_{title}.png')
+
     # Visualizzazione del grafico
     plt.show()
     return mean_accuracy, mean_precision, mean_recall, mean_f1
+
 
 def stampa_metriche(pred_train, pred_test, y_train, y_test, model):
     # Calcola e stampa l'accuracy per il train set e il test set
