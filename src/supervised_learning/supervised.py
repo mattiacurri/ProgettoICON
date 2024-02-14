@@ -25,10 +25,11 @@ from pprint import pprint
 
 from lightgbm import LGBMClassifier
 
+def sturgeRule(n):
+    return int(1 + 3.322 * np.log10(n))
 
 def returnBestHyperparameters(dataset, differentialColumn):
     # Cross Validation Strategy (Repeated Stratified K-Fold) with 5 splits and 2 repeats and a random state of 42 for reproducibility
-    CV = RepeatedStratifiedKFold(n_splits=5, n_repeats=2, random_state=42)
     X = dataset.drop(differentialColumn, axis=1)
     y = dataset[differentialColumn]
 
@@ -36,6 +37,8 @@ def returnBestHyperparameters(dataset, differentialColumn):
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=.2, stratify=y, random_state=42
     )
+
+    CV = RepeatedStratifiedKFold(n_splits=sturgeRule(X_train.shape[0]), n_repeats=2, random_state=42)
 
     # Models Evaluated
     dtc = DecisionTreeClassifier()
@@ -330,7 +333,7 @@ def trainModelKFold(dataSet, differentialColumn):
         random_state=42,
     )
     # Cross Validation Strategy (Repeated Stratified K-Fold) with 5 splits and 2 repeats and a random state of 42 for reproducibility
-    cv = RepeatedStratifiedKFold(n_splits=5, n_repeats=2, random_state=42)
+    cv = RepeatedStratifiedKFold(n_splits=sturgeRule(X_train.shape[0]), n_repeats=2, random_state=42)
 
     # Scoring Metrics for the models (Balanced Accuracy, Precision, Recall, F1)
     scoring_metrics = ["balanced_accuracy", "precision_weighted", "recall_weighted", "f1_weighted"]

@@ -18,7 +18,7 @@ from imblearn.combine import SMOTEENN, SMOTETomek
 from imblearn.under_sampling import RandomUnderSampler, ClusterCentroids
 from imblearn.over_sampling import ADASYN
 from xgboost import XGBClassifier
-
+from supervised import sturgeRule
 from sklearn.base import TransformerMixin, BaseEstimator
 
 class Nothing(BaseEstimator, TransformerMixin):
@@ -45,12 +45,12 @@ class Debugger(BaseEstimator, TransformerMixin):
 
 
 def returnBestHyperparameters(dataset, differentialColumn, samplingPipe, debug=False):
-    CV = RepeatedStratifiedKFold(n_splits=5, n_repeats=2, random_state=42)
     X = dataset.drop(differentialColumn, axis=1)
     y = dataset[differentialColumn]
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=.2, stratify=y, random_state=42
     )
+    CV = RepeatedStratifiedKFold(n_splits=sturgeRule(X_train.shape[0]), n_repeats=2, random_state=42)
     dtc = DecisionTreeClassifier()
     rfc = RandomForestClassifier()
     knn = KNeighborsClassifier()
@@ -257,7 +257,7 @@ def trainModelKFold(dataSet, differentialColumn, samplingPipe, debug=False):
                         random_state=42,
                     ))])
 
-    cv = RepeatedStratifiedKFold(n_splits=5, n_repeats=2, random_state=42)
+    cv = RepeatedStratifiedKFold(n_splits=sturgeRule(X_train.shape[0]), n_repeats=2, random_state=42)
     scoring_metrics = ["balanced_accuracy", "precision_weighted", "recall_weighted", "f1_weighted"]
 
     results_dtc = {}
