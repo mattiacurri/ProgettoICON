@@ -53,36 +53,6 @@ def plot_learning_curves(model, X, y, differentialColumn, model_name, method_nam
 
     plt.show()
 
-
-def visualizeAspectRatioChart(dataSet, differentialColumn, title):
-    # Conta le occorrenze per ciascun valore unico di differentialColumn
-    counts = dataSet[differentialColumn].value_counts()
-
-    # Etichette e colori per il grafico
-    labels = counts.index.tolist()
-    colors = [
-        "lightcoral",
-        "lightskyblue",
-        "lightgreen",
-        "gold",
-        "lightsteelblue",
-        "lightpink",
-        "lightgrey",
-        "lightblue",
-        "lightgreen",
-        "lightcoral",
-        "lightpink",
-    ]
-
-    fig, ax = plt.subplots(figsize=(8, 8))
-    wedges, texts, autotexts = ax.pie(
-        counts, labels=labels, colors=colors, autopct="%1.1f%%", startangle=90
-    )
-    ax.legend(labels, loc="lower left", fontsize="small")
-    plt.title(title)
-    plt.show()
-
-
 # Funzione che visualizza i grafici delle metriche per ogni modello
 def visualizeMetricsGraphs(model, title):
     models = list(model.keys())
@@ -147,31 +117,3 @@ def visualizeMetricsGraphs(model, title):
     return mean_accuracy, mean_precision, mean_recall, mean_f1
 
 
-def stampa_metriche(pred_train, pred_test, y_train, y_test, model):
-    # Calcola e stampa l'accuracy per il train set e il test set
-    accuracy_train = accuracy_score(y_train, pred_train)
-    accuracy_test = accuracy_score(y_test, pred_test)
-    print("----------CONFRONTO PERFORMANCE TRAIN VS TEST-----------")
-    print(f"Modello valutato: {model}")
-    print(f'Accuracy (Train): {accuracy_train}')
-    print(f'Accuracy (Test): {accuracy_test}')
-
-    # Calcola e stampa precision, recall, e F1-score per il train set e il test set
-    precision_train = precision_score(y_train, pred_train, average='macro')
-    recall_train = recall_score(y_train, pred_train, average='macro')
-    f1_train = f1_score(y_train, pred_train, average='macro')
-
-    precision_test = precision_score(y_test, pred_test, average='macro')
-    recall_test = recall_score(y_test, pred_test, average='macro')
-    f1_test = f1_score(y_test, pred_test, average='macro')
-
-    print(f'Precision (Train): {precision_train}')
-    print(f'Precision (Test): {precision_test}')
-    print(f'Recall (Train): {recall_train}')
-    print(f'Recall (Test): {recall_test}')
-    print(f'F1-Score (Train): {f1_train}')
-    print(f'F1-Score (Test): {f1_test}')
-
-    # Stampa classification report per il train set e il test set
-    print('Classification Report (Train):\n', classification_report(y_train, pred_train))
-    print('Classification Report (Test):\n', classification_report(y_test, pred_test))
