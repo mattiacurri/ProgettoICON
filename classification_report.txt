@@ -1,0 +1,55 @@
+LightGBM Classification Report: 
+              precision    recall  f1-score   support
+
+           0       0.83      0.82      0.82       528
+           1       0.71      0.73      0.72       492
+           2       0.81      0.83      0.82       489
+           3       0.65      0.42      0.51        52
+
+    accuracy                           0.78      1561
+   macro avg       0.75      0.70      0.72      1561
+weighted avg       0.78      0.78      0.78      1561
+KNearestNeighbors Classification Report: 
+              precision    recall  f1-score   support
+
+           0       0.45      0.48      0.46       528
+           1       0.33      0.33      0.33       492
+           2       0.36      0.34      0.35       489
+           3       0.16      0.15      0.16        52
+
+    accuracy                           0.38      1561
+   macro avg       0.33      0.32      0.33      1561
+weighted avg       0.37      0.38      0.38      1561
+DecisionTree Classification Report: 
+              precision    recall  f1-score   support
+
+           0       0.68      0.75      0.71       528
+           1       0.55      0.58      0.57       492
+           2       0.75      0.67      0.71       489
+           3       0.58      0.29      0.38        52
+
+    accuracy                           0.66      1561
+   macro avg       0.64      0.57      0.59      1561
+weighted avg       0.66      0.66      0.66      1561
+RandomForest Classification Report: 
+              precision    recall  f1-score   support
+
+           0       0.88      0.88      0.88       528
+           1       0.81      0.80      0.80       492
+           2       0.86      0.90      0.88       489
+           3       0.68      0.44      0.53        52
+
+    accuracy                           0.85      1561
+   macro avg       0.81      0.75      0.77      1561
+weighted avg       0.84      0.85      0.84      1561
+XGBoost Classification Report: 
+              precision    recall  f1-score   support
+
+           0       0.79      0.82      0.81       528
+           1       0.67      0.66      0.67       492
+           2       0.78      0.79      0.79       489
+           3       0.70      0.37      0.48        52
+
+    accuracy                           0.75      1561
+   macro avg       0.74      0.66      0.69      1561
+weighted avg       0.75      0.75      0.75      1561
