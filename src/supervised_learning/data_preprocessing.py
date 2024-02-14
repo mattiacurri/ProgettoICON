@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from imblearn.pipeline import Pipeline, make_pipeline
-from sklearn.preprocessing import PowerTransformer, MinMaxScaler
+from sklearn.preprocessing import PowerTransformer, MinMaxScaler, StandardScaler
 from plot import visualizeMetricsGraphs, visualizeAspectRatioChart, plot_learning_curves
 import matplotlib.pyplot as plt
 from sklearn.model_selection import (
@@ -21,7 +21,8 @@ file_path = "../../data/dataset.csv"
 
 # Read the CSV file into a pandas DataFrame
 df = pd.read_csv(file_path)
-
+#print(df.shape)
+#print(df.drop_duplicates().shape)
 df_eda = pd.read_csv(file_path)
 
 # print pearson correlation coefficient for the numeric columns
@@ -51,13 +52,50 @@ df = df.drop(
         "Operating Margin",
         "Pre-Tax Profit Margin",
         "ROA - Return On Assets",
-        "Corporation",
-        "Ticker",
-        "Rating Date",
         "SIC Code",
         "CIK",
     ]
 )
+#print(df.shape)
+#print(df.drop_duplicates().shape)
+
+# map ticker to numbers
+
+r = df["Ticker"].unique()
+
+df["Ticker"] = df["Ticker"].map({r[i]: i for i in range(len(r))})
+
+# map corporation to numbers
+
+r = df["Corporation"].unique()
+
+df["Corporation"] = df["Corporation"].map({r[i]: i for i in range(len(r))})
+
+# drop ticker
+
+df = df.drop(columns=["Ticker"])
+#print(df.shape)
+#print(df.drop_duplicates().shape)
+#print(df["Corporation"].value_counts())
+
+df = df.drop(columns=["Corporation"])
+# map date to year
+#print(df.shape)
+#print(df.drop_duplicates().shape)
+df["Rating Date"] = pd.to_datetime(df["Rating Date"])
+
+# new feature year AND month
+
+df["Year Month Day"] = df["Rating Date"].dt.to_period("D")
+
+df["Year Month Day"] = df["Year Month Day"].dt.to_timestamp().dt.strftime('%Y%m%d').astype(int)
+
+print(df["Year Month Day"].value_counts())
+# drop Rating Date
+
+df = df.drop(columns=["Rating Date"])
+#print(df.shape)
+#print(df.drop_duplicates().shape)
 
 # Perform one-hot encoding on Rating Agency
 encoder = OneHotEncoder()
@@ -128,7 +166,7 @@ df["Rating"] = df["Rating"].map(rating_dict)
 # now map to binary
 # df["Rating"] = df["Rating"].map(lambda x: 1 if x >= 6 else 0)
 
-print(df["Rating"].value_counts())
+#print(df["Rating"].value_counts())
 
 # Perform one-hot encoding on Rating Agency
 encoder = OneHotEncoder()
@@ -154,11 +192,17 @@ df["Asset Turnover"] = PowerTransformer().fit_transform(df[["Asset Turnover"]])
 f64 = df.select_dtypes(include=["float64"])
 # print(df[f64.columns].head())
 
+
 scaler = MinMaxScaler()
 
 df[f64.columns] = scaler.fit_transform(f64)
 
+print(df.info())
 
+print(df["Rating"].value_counts())
+print(df.drop_duplicates().shape)
+
+df.drop_duplicates()
 # export the new df to a csv file
 
 df.to_csv("../../data/dataset_preprocessed.csv", index=False)
