@@ -2,16 +2,16 @@
 
 \noindent Nell'attuale panorama economico globale, le valutazioni delle aziende svolgono un ruolo cruciale nel determinare il loro status finanziario e creditizio. Le agenzie di rating forniscono valutazioni e raccomandazioni ai mercati finanziari, agli investitori e alle stesse aziende stesse, influenzando direttamente le decisioni di investimento e i flussi di capitale. In questo contesto, l'applicazione di tecniche di apprendimento supervisionato si presenta come un'opportunità significativa per migliorare e automatizzare il processo di valutazione aziendale.
 
-\noindent Il progetto ha l'obiettivo di predire il Corporate Credit Rating, l'opinione di un'agenzia indipendente sulla probabilità che una società adempia pienamente ai propri obblighi finanziari alla scadenza. da parte delle agenzie di rating per migliorare la valutazione del rischio e per l'ottimizzazione degli investimenti.
+\noindent Il progetto ha l'obiettivo di predire il Corporate Credit Rating, l'opinione di un'agenzia indipendente sulla probabilità che una società adempia pienamente ai propri obblighi finanziari alla scadenza.
 
 \noindent Come riporta \cite{investopediacorporatecredit}, ogni agenzia ha un proprio sistema di rating, ma sono tutti simili. Ad esempio, Standard and Poor's utilizza "AAA" per la massima qualità del credito con il rischio di credito più basso, "AA" per la migliore, seguita da "A" e "BBB" per un credito soddisfacente. Questi rating sono considerati "investment grade", il che significa che la società valutata ha un livello di qualità richiesto da molte istituzioni. Tutto ciò che è inferiore a "BBB" è considerato speculativo o peggio, fino a un rating "D", che indica "spazzatura".
 
 \noindent Il progetto utilizza i dati forniti e adottati da \cite{makwana2022get}, base di partenza per l'implementazione del sistema, a cui è stato integrato \cite{nguyen2021multimodal}, che utilizza un dataset differente e meno ricco di esempi, ma che comunque propone degli interessanti spunti di partenza per affrontare il problema.
-Inoltre, \cite{makwana2022get} propone come sviluppo futuro quello di trattare il problema come un problema multiclasse invece che binario, cosa che è stata fatta in questo studio.
+Inoltre, \cite{makwana2022get} propone come sviluppo futuro quello di trattare il problema come un problema multiclasse invece che binario e di considerare più settori, cosa che è stata fatta in questo studio, seppure non tenendo conto delle date dei rating.
 \subsection{Elenco argomenti di interesse}
 
 \begin{itemize}[label=-]
-    \item \textbf{Apprendimento Supervisionato}\cite{PooleMackworth23Ch7}: Valutare le Predizioni, Alberi di Decisione, Cross Validation (k-fold Cross Validation), Modelli compositi: Boosting, \textit{Oversampling, undersampling, sbilanciamento delle classi}
-    \item \textbf{Apprendimento Probabilistico}\cite{PooleMackworth23Ch10}: Rete Bayesiana, Apprendimento della Struttura, Query, Generazione di nuovi Samples
+    \item \textbf{Apprendimento Supervisionato} \cite{PooleMackworth23Ch7}: Valutare le Predizioni, Alberi di Decisione, Cross Validation, Modelli compositi: Boosting e Bagging, \textit{Oversampling, undersampling, tecniche miste, valutare le predizioni in presenza di sbilanciamento delle classi}
+    \item \textbf{Apprendimento Probabilistico} \cite{PooleMackworth23Ch10}: Rete Bayesiana, Apprendimento della Struttura, Query, Generazione di nuovi Samples, \textit{Valutazione}
 \end{itemize}
 \noindent In \textit{corsivo} gli argomenti extra trattati.

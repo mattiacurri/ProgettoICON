@@ -32,6 +32,8 @@
 \citation{makwana2022get}
 \citation{nguyen2021multimodal}
 \@writefile{toc}{\contentsline {section}{\numberline {2}Preprocessing dei dati}{3}{section.2}\protected@file@percent }
+\citation{xgboost}
+\citation{lightgbm}
 \citation{ilfattoquotidiano}
 \@writefile{toc}{\contentsline {section}{\numberline {3}Apprendimento Supervisionato}{6}{section.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Modelli e metodologie utilizzate}{6}{subsection.3.1}\protected@file@percent }
@@ -39,73 +41,101 @@
 \@writefile{toc}{\contentsline {paragraph}{Train Test Split.}{6}{section*.6}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Cross-Validation.}{6}{section*.7}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Ricerca degli iperparametri.}{6}{section*.8}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Riproducibilità.}{7}{section*.9}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Valutazione.}{7}{section*.10}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Primo esperimento}{7}{subsection.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Iperparametri.}{7}{section*.11}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Parametri del modello\relax }}{8}{table.caption.12}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Risultati.}{8}{section*.13}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Curve di apprendimento.}{8}{section*.15}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Curve di apprendimento.\relax }}{9}{figure.caption.16}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Errori Standard per i Modelli\relax }}{9}{table.caption.17}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Varianza degli Errori per i Modelli\relax }}{9}{table.caption.18}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Feature importances.}{10}{section*.19}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Secondo esperimento: class weights vs BalancedRF}{10}{subsection.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Iperparametri.}{11}{section*.21}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Parametri del modello\relax }}{11}{table.caption.22}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Risultati.}{11}{section*.23}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Curve di apprendimento.}{12}{section*.25}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Curve di apprendimento.\relax }}{13}{figure.caption.26}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Errori Standard per i Modelli\relax }}{13}{table.caption.27}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Varianza degli Errori per i Modelli\relax }}{13}{table.caption.28}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Terzo esperimento: oversampling}{14}{subsection.3.4}\protected@file@percent }
-\@writefile{loe}{\contentsline {attenzione}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Attenzione}{14}{thmt@dummyctr.dummy.1}\protected@file@percent }
-\pgfsyspdfmark {pgfid1}{4754933}{23224320}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1}SMOTE}{14}{subsubsection.3.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Iperparametri.}{14}{section*.29}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Parametri del modello\relax }}{15}{table.caption.30}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Risultati.}{15}{section*.31}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Curve di apprendimento.}{15}{section*.33}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Curve di apprendimento.\relax }}{16}{figure.caption.34}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Errori Standard per i Modelli\relax }}{16}{table.caption.35}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Varianza degli Errori per i Modelli\relax }}{16}{table.caption.36}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.2}ADASYN}{17}{subsubsection.3.4.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Iperparametri.}{17}{section*.37}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Parametri del modello\relax }}{17}{table.caption.38}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Risultati.}{17}{section*.39}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Curve di apprendimento.}{18}{section*.41}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Curve di apprendimento.\relax }}{18}{figure.caption.42}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces Errori Standard per i Modelli\relax }}{18}{table.caption.43}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces Varianza degli Errori per i Modelli\relax }}{18}{table.caption.44}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Quarto esperimento: tecniche miste}{19}{subsection.3.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.1}SMOTETomek}{19}{subsubsection.3.5.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Iperparametri.}{19}{section*.45}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {13}{\ignorespaces Parametri del modello\relax }}{19}{table.caption.46}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Risultati.}{19}{section*.47}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Curve di apprendimento.}{20}{section*.49}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Curve di apprendimento.\relax }}{20}{figure.caption.50}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {14}{\ignorespaces Errori Standard per i Modelli\relax }}{21}{table.caption.51}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {15}{\ignorespaces Varianza degli Errori per i Modelli\relax }}{21}{table.caption.52}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.2}SMOTEENN}{21}{subsubsection.3.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Classificatore LightGBM.}{7}{section*.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Classificatore DecisionTree.}{7}{section*.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Classificatore RandomForest.}{7}{section*.11}\protected@file@percent }
+\citation{kappa}
+\@writefile{toc}{\contentsline {paragraph}{Classificatore XGBoost.}{8}{section*.12}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Riproducibilità.}{8}{section*.13}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Valutazione.}{8}{section*.14}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Primo esperimento}{9}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Iperparametri.}{9}{section*.15}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Parametri del modello\relax }}{9}{table.caption.16}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Risultati.}{9}{section*.17}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Curve di apprendimento.}{10}{section*.19}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Curve di apprendimento.\relax }}{10}{figure.caption.20}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Errori Standard per i Modelli\relax }}{11}{table.caption.21}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Varianza degli Errori per i Modelli\relax }}{11}{table.caption.22}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Feature importance.}{11}{section*.23}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Valutazione.}{12}{section*.25}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Secondo esperimento: class weights vs BalancedRF}{12}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Iperparametri.}{13}{section*.26}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Parametri del modello\relax }}{13}{table.caption.27}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Risultati.}{13}{section*.28}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Curve di apprendimento.}{14}{section*.30}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Curve di apprendimento.\relax }}{14}{figure.caption.31}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Errori Standard per i Modelli\relax }}{15}{table.caption.32}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Varianza degli Errori per i Modelli\relax }}{15}{table.caption.33}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Valutazione.}{15}{section*.34}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Terzo esperimento: oversampling}{15}{subsection.3.4}\protected@file@percent }
+\@writefile{loe}{\contentsline {attenzione}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Attenzione}{16}{thmt@dummyctr.dummy.1}\protected@file@percent }
+\pgfsyspdfmark {pgfid1}{4754933}{44294136}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1}SMOTE}{16}{subsubsection.3.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Iperparametri.}{16}{section*.35}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Parametri del modello\relax }}{16}{table.caption.36}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Risultati.}{16}{section*.37}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Curve di apprendimento.}{17}{section*.39}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Curve di apprendimento.\relax }}{17}{figure.caption.40}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Errori Standard per i Modelli\relax }}{18}{table.caption.41}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Varianza degli Errori per i Modelli\relax }}{18}{table.caption.42}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Valutazione.}{18}{section*.43}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.2}ADASYN}{18}{subsubsection.3.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Iperparametri.}{18}{section*.44}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Parametri del modello\relax }}{19}{table.caption.45}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Risultati.}{19}{section*.46}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Curve di apprendimento.}{19}{section*.48}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Curve di apprendimento.\relax }}{20}{figure.caption.49}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces Errori Standard per i Modelli\relax }}{20}{table.caption.50}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces Varianza degli Errori per i Modelli\relax }}{20}{table.caption.51}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Valutazione.}{20}{section*.52}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Quarto esperimento: tecniche miste}{21}{subsection.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.1}SMOTETomek}{21}{subsubsection.3.5.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Iperparametri.}{21}{section*.53}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {16}{\ignorespaces Parametri del modello\relax }}{21}{table.caption.54}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Risultati.}{22}{section*.55}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {13}{\ignorespaces Parametri del modello\relax }}{21}{table.caption.54}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Risultati.}{21}{section*.55}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Curve di apprendimento.}{22}{section*.57}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Curve di apprendimento.\relax }}{22}{figure.caption.58}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {17}{\ignorespaces Errori Standard per i Modelli\relax }}{23}{table.caption.59}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {18}{\ignorespaces Varianza degli Errori per i Modelli\relax }}{23}{table.caption.60}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6}Sommario}{23}{subsection.3.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4}Ragionamento probabilistico e Bayesian Network}{24}{section.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Apprendimento della struttura}{24}{subsection.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Generazione di sample}{25}{subsection.4.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Gestione di dati mancanti}{25}{subsection.4.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Query di esempio}{25}{subsection.4.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusioni e Sviluppi futuri}{26}{section.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Curve di apprendimento.\relax }}{22}{figure.caption.58}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {14}{\ignorespaces Errori Standard per i Modelli\relax }}{23}{table.caption.59}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {15}{\ignorespaces Varianza degli Errori per i Modelli\relax }}{23}{table.caption.60}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Valutazione.}{23}{section*.61}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.2}SMOTEENN}{23}{subsubsection.3.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Iperparametri.}{23}{section*.62}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {16}{\ignorespaces Parametri del modello\relax }}{23}{table.caption.63}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Risultati.}{24}{section*.64}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Curve di apprendimento.}{24}{section*.66}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Curve di apprendimento.\relax }}{24}{figure.caption.67}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {17}{\ignorespaces Errori Standard per i Modelli\relax }}{25}{table.caption.68}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {18}{\ignorespaces Varianza degli Errori per i Modelli\relax }}{25}{table.caption.69}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Valutazione.}{25}{section*.70}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6}Sommario}{25}{subsection.3.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Ragionamento probabilistico e Bayesian Network}{26}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Apprendimento della struttura}{26}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Generazione di sample e gestione di dati mancanti}{27}{subsection.4.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Esempio generato e classificato\relax }}{27}{figure.caption.73}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:normal}{{7}{27}{Esempio generato e classificato\relax }{figure.caption.73}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Esempio generato e classificato senza \textit  {Debt/Equity Ratio}\relax }}{28}{figure.caption.74}\protected@file@percent }
+\newlabel{fig:without}{{8}{28}{Esempio generato e classificato senza \textit {Debt/Equity Ratio}\relax }{figure.caption.74}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Distribuzione di probabilità ampia\relax }}{28}{figure.caption.75}\protected@file@percent }
+\newlabel{fig:so}{{9}{28}{Distribuzione di probabilità ampia\relax }{figure.caption.75}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Distribuzione di probabilità molto ampia\relax }}{28}{figure.caption.76}\protected@file@percent }
+\newlabel{fig:bad}{{10}{28}{Distribuzione di probabilità molto ampia\relax }{figure.caption.76}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Valutazione}{29}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Query di esempio}{29}{subsection.4.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Esempio di query\relax }}{29}{figure.caption.77}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Risultato prima query\relax }}{29}{figure.caption.78}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Risultato seconda query\relax }}{30}{figure.caption.79}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Sommario}{30}{subsection.4.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusioni}{31}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Sviluppi futuri}{31}{section.6}\protected@file@percent }
 \bibdata{bibliography}
-\bibcite{investopediacorporatecredit}{1}
-\bibcite{makwana2022get}{2}
-\bibcite{nguyen2021multimodal}{3}
-\bibcite{PooleMackworth23Ch7}{4}
-\bibcite{PooleMackworth23Ch10}{5}
-\bibcite{ilfattoquotidiano}{6}
-\gdef \@abspage@last{28}
+\bibcite{xgboost}{1}
+\bibcite{investopediacorporatecredit}{2}
+\bibcite{lightgbm}{3}
+\bibcite{makwana2022get}{4}
+\bibcite{nguyen2021multimodal}{5}
+\bibcite{PooleMackworth23Ch7}{6}
+\bibcite{PooleMackworth23Ch10}{7}
+\bibcite{ilfattoquotidiano}{8}
+\bibcite{kappa}{9}
+\gdef \@abspage@last{33}

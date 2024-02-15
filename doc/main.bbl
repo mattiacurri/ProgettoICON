@@ -1,9 +1,23 @@
 \begin{thebibliography}{1}
 
+\bibitem{xgboost}
+Tianqi Chen and Carlos Guestrin.
+\newblock {XGBoost}: A scalable tree boosting system.
+\newblock In {\em Proceedings of the 22nd ACM SIGKDD International Conference
+  on Knowledge Discovery and Data Mining}, KDD '16, pages 785--794, New York,
+  NY, USA, 2016. ACM.
+
 \bibitem{investopediacorporatecredit}
 Investopedia.
 \newblock Corporate credit rating: What it is, how it works, 2024.
 \newblock Online; accessed 13-February-2024.
+
+\bibitem{lightgbm}
+Guolin Ke, Qi~Meng, Thomas Finley, Taifeng Wang, Wei Chen, Weidong Ma, Qiwei
+  Ye, and Tie-Yan Liu.
+\newblock Lightgbm: A highly efficient gradient boosting decision tree.
+\newblock {\em Advances in neural information processing systems},
+  30:3146--3154, 2017.
 
 \bibitem{makwana2022get}
 Ravi Makwana, Dhruvil Bhatt, Kirtan Delwadia, Agam Shah, and Bhaskar Chaudhury.
@@ -35,5 +49,10 @@ Il~Fatto Quotidiano.
   società in cui i soci dell'agenzia avevano partecipazioni oltre il
   10percento, 2024.
 \newblock Online; accessed 13-February-2024.
+
+\bibitem{kappa}
+Wikipedia.
+\newblock Kappa di cohen --- wikipedia{,} l'enciclopedia libera, 2019.
+\newblock [Online; in data 14-febbraio-2024].
 
 \end{thebibliography}

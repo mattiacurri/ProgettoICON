@@ -6,9 +6,12 @@ import pandas as pd
 from matplotlib import pyplot as plt
 from pgmpy.estimators import MaximumLikelihoodEstimator, HillClimbSearch, BayesianEstimator
 from pgmpy.inference import VariableElimination
+from pgmpy.metrics import correlation_score, log_likelihood_score
 from pgmpy.models import BayesianNetwork
+from sklearn.metrics import balanced_accuracy_score
 
 pd.set_option('display.max_columns', 100)
+
 
 # Funzione che visualizza il grafo del Bayesian Network
 def visualizeBayesianNetwork(bayesianNetwork: BayesianNetwork):
@@ -43,6 +46,7 @@ def visualizeBayesianNetwork(bayesianNetwork: BayesianNetwork):
     plt.show()
     plt.clf()
 
+
 def visualizeInfo(bayesianNetwork: BayesianNetwork):
     # Get the CPDs
     print(f'Check model: {bayesianNetwork.check_model()}\n')
@@ -53,34 +57,37 @@ def visualizeInfo(bayesianNetwork: BayesianNetwork):
 
 # Funzione che crea la rete bayesiana
 def bNetCreation(df):
-    #Ricerca della struttura ottimale
-    hc_k2=HillClimbSearch(df)
-    k2_model=hc_k2.estimate(scoring_method='k2score', max_iter=100)
-    #Creazione della rete bayesiana
+    # Ricerca della struttura ottimale
+    hc_k2 = HillClimbSearch(df)
+    k2_model = hc_k2.estimate(scoring_method='k2score', max_iter=100)
+    # Creazione della rete bayesiana
     model = BayesianNetwork(k2_model.edges())
     model.fit(df, estimator=MaximumLikelihoodEstimator, n_jobs=-1)
-    #Salvo la rete bayesiana su file
-    with open('modelloSMOTE.pkl', 'wb') as output:
+    # Salvo la rete bayesiana su file
+    with open('modellol.pkl', 'wb') as output:
         pickle.dump(model, output)
     visualizeBayesianNetwork(model)
-    #visualizeInfo(model)
+    # visualizeInfo(model)
     return model
+
 
 # Funzione che carica la rete bayesiana da file
 def loadBayesianNetwork():
     with open('modello2.pkl', 'rb') as input:
         model = pickle.load(input)
-    # visualizeBayesianNetwork(model)
+    visualizeBayesianNetwork(model)
     # visualizeInfo(model)
     return model
 
-#Predico il valore di differentialColumn per l'esempio
+
+# Predico il valore di differentialColumn per l'esempio
 def predict(bayesianNetwork: BayesianNetwork, example, differentialColumn):
     inference = VariableElimination(bayesianNetwork)
     result = inference.query(variables=[differentialColumn], evidence=example, elimination_order='MinFill')
     print(result)
 
-#genera un esempio randomico
+
+# genera un esempio randomico
 def generateRandomExample(bayesianNetwork: BayesianNetwork):
     return bayesianNetwork.simulate(n_samples=1).drop(columns=['clusterIndex'])
 
@@ -89,49 +96,57 @@ def generateRandomExample(bayesianNetwork: BayesianNetwork):
 
 df = pd.read_csv("../../data/dataset_preprocessed_bayesian.csv")
 
+
 def markov_blanket_of(node):
     print(f'Markov blanket of \'{node}\' is {set(bayesianNetwork.get_markov_blanket(node))}')
 
+
 def generateRandomExample(bayesianNetwork: BayesianNetwork):
-    return bayesianNetwork.simulate(n_samples=1).drop(columns=['Rating'])
+    exp = bayesianNetwork.simulate(n_samples=1)
+    exprating = exp['Rating']
+    expr = exp.drop(columns=['Rating'])
+    return exprating, expr
+
 
 def multi_predict(bayesianNetwork: BayesianNetwork, n_iter):
     for n in range(n_iter):
-        exp = generateRandomExample(bayesianNetwork)
-        for d in df.columns:
-            print(exp[d] if d != "Rating" else "")
+        exprating, exp = generateRandomExample(bayesianNetwork)
+        print("", exp)
+        print("  Rating: ", exprating.values[0])
         print(predict(bayesianNetwork, exp.to_dict('records')[0], 'Rating'))
-        print("--------------------")
+        print("--------- ORA SENZA DEBT/EQUITY RATIO -----------")
+        del exp["Debt/Equity Ratio"]
+        print(predict(bayesianNetwork, exp.to_dict('records')[0], 'Rating'))
+
 
 def query_report(infer, variables, evidence=None, elimination_order="MinFill", show_progress=False, desc=""):
     if desc:
         print(desc)
     start_time = time.time()
-    #evidence = {key: df[key].values[0] for key in evidence.keys()} if evidence else None
+    # evidence = {key: df[key].values[0] for key in evidence.keys()} if evidence else None
     print(infer.query(variables=variables,
                       evidence=evidence,
                       elimination_order=elimination_order,
                       show_progress=show_progress))
     print(f'--- Query executed in {time.time() - start_time:0,.4f} seconds ---\n')
 
-#bayesianNetwork = bNetCreation(df)
+
+from sklearn.preprocessing import LabelEncoder
+
+# Initialize a label encoder
+label_encoder = LabelEncoder()
+
+# bayesianNetwork = bNetCreation(df)
 bayesianNetwork = loadBayesianNetwork()
-exp = generateRandomExample(bayesianNetwork)
-for d in df.columns:
-    print(exp[d] if d != "Rating" else "")
-predict(bayesianNetwork, exp.to_dict('records')[0], 'Rating')
-
-del exp["Debt/Equity Ratio"]
-print(exp)
-predict(bayesianNetwork, exp.to_dict('records')[0], 'Rating')
-
+print(correlation_score(bayesianNetwork, df, score=balanced_accuracy_score))
+# multi_predict(bayesianNetwork, 10)
 
 # print(multi_predict(bayesianNetwork, 10))
 infer = VariableElimination(bayesianNetwork)
-query_report(infer, variables=['Rating'], evidence={'Current Ratio': 1, 'Debt/Equity Ratio': 1})
-#query_report(infer, variables=['Debt/Equity Ratio', 'ROI - Return On Investment'], evidence={"Rating": 1})
-#query_report(infer, variables=['Debt/Equity Ratio', 'ROI - Return On Investment'], evidence={"Rating": 2})
-#query_report(infer, variables=['Debt/Equity Ratio', 'ROI - Return On Investment'], evidence={"Rating": 3})
-#query_report(infer, variables=['Rating'], evidence={'Rating': 1}, desc="Probabilità che sia stata una certa agenzia a dare il rating 1")
-#query_report(infer, variables=['Rating'], evidence={'Rating': 2}, desc="Probabilità che sia stata una certa agenzia a dare il rating 1")
-#query_report(infer, variables=['Rating'], evidence={'Rating': 3}, desc="Probabilità che sia stata una certa agenzia a dare il rating 1")
+query_report(infer, variables=['Debt/Equity Ratio'], evidence={'Rating': 3},
+             desc='Probabilità che una azienda sia molto rischiosa dato il debt/equity ratio')
+query_report(infer, variables=['Debt/Equity Ratio', 'Operating Cash Flow Per Share'], evidence={'Rating': 3},
+             desc='Probabilità che una azienda sia molto rischiosa dato il debt/equity ratio e '
+                  'l\'operating cash flow per share')
+
+markov_blanket_of('Rating')

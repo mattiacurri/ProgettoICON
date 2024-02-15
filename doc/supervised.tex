@@ -10,27 +10,71 @@
     feature di input. A seconda se tali condizioni sono rispettate o meno, verrà
     seguito un percorso piuttosto che un altro e alla fine si arriverà alla classe di
     appartenenza
-    \item \textbf{RandomForest}: classificatore che si ottiene creando tanti DecisionTree. Il valore in output si ottiene mediando sulle predizioni di ogni albero
+    \item \textbf{RandomForest}: classificatore che si ottiene creando tanti Decision Tree. Il valore in output si ottiene mediando sulle predizioni di ogni albero
     appartenente alla foresta (tecnica di bagging)
-    \item \textbf{XGBoost}: utilizza un approccio di boosting basato sul gradiente che combina diverse versioni di alberi decisionali deboli per creare un modello complessivo più potente
-    \item \textbf{LightGBM}: altra libreria di boosting basata sul gradiente progettata per massimizzare l'efficienza computazionale. Si distingue per la sua velocità di addestramento e di previsione, grazie all'utilizzo di un algoritmo di divisione foglia-per-foglia e ad altre ottimizzazioni che minimizzano la memoria e la computazione necessarie.
+    \item \textbf{XGBoost} \cite{xgboost}: utilizza un approccio di boosting basato sul gradiente che combina diverse versioni di alberi decisionali deboli per creare un modello complessivo più potente
+    \item \textbf{LightGBM} \cite{lightgbm}: altra libreria di boosting basata sul gradiente progettata per massimizzare l'efficienza computazionale. Si distingue per la sua velocità di addestramento e di previsione, grazie all'utilizzo di un algoritmo di divisione foglia-per-foglia e ad altre ottimizzazioni che minimizzano la memoria e la computazione necessarie.
 \end{itemize}
-\noindent Si è scelto di non usare modelli come ad esempio la regressione logistica, in quanto il rating può non essere direttamente correlato con le features a nostra disposizione (a titolo di esempio \cite{ilfattoquotidiano}), e quindi la linearità del modello non si presta bene. In alcuni esperimenti alcuni di questi sono stati scartati o sostituiti, in tal caso verrà specificato nella sezione apposita.
+\noindent Si è scelto di non usare modelli come ad esempio la regressione logistica, in quanto il rating può non essere direttamente correlato con le features a nostra disposizione (a titolo di esempio \cite{ilfattoquotidiano}), e quindi la linearità del modello non si presta bene. In alcuni esperimenti alcuni di questi modelli appena presentati sono stati sostituiti, in tal caso verrà specificato nella sezione apposita.
 \paragraph{Train Test Split.} Per valutare le performance dei modelli, si è diviso il dataset in due parti: una parte per l'addestramento e una parte per la validazione. Si è scelto di adottare una divisione 80-20 \textbf{stratificata}, in modo da mantenere la stessa distribuzione delle classi nel training set e nel test set.
-\paragraph{Cross-Validation.} Per trovare i migliori iperparametri per ogni modello, e per la fase di valutazione si è adottata una \textit{Repeated Stratified K-fold cross validation}, in cui la cross validation viene ripetuta per $m$ volte mantenendo nei fold la distribuzione originaria delle classi. Il numero \textit{K} di fold è stato definito per ogni esperimento dalla regola di Sturges, una delle regole empiriche per la scelta del numero di classi in un istogramma. La regola di Sturges suggerisce di utilizzare un numero di classi pari a $1 + \log_2(n)$, dove $n$ è il numero di osservazioni. In questo caso, per garantire un numero di fold non troppo elevato mantenendo comunque la regola, si è scelto di adottare la regola usando la seguente formula: $\dfrac{1 + \log_2(n)}{3}$.
+\paragraph{Cross-Validation.} Per trovare i migliori iperparametri per ogni modello e per la fase di valutazione si è adottata una \textit{Repeated Stratified K-fold cross validation}, in cui la cross validation viene ripetuta per $m$ volte mantenendo nei fold la distribuzione originaria delle classi. Il numero \textit{K} di fold è stato definito per ogni esperimento dalla regola di Sturges, una delle regole empiriche per la scelta del numero di classi in un istogramma. La regola di Sturges suggerisce di utilizzare un numero di classi (\textit{fold}) pari a $1 + \log_2(n)$, dove $n$ è il numero di osservazioni \textbf{del training set}. In questo caso, per garantire un numero di fold non troppo elevato mantenendo comunque la regola, si è scelto di adottare la regola usando la seguente formula: $\dfrac{1 + \log_2(n)}{3}$.
 \paragraph{Ricerca degli iperparametri.} Per la ricerca degli iperparametri migliori si è adottata una \textit{GridSearchCV} con una \textit{Repeated Stratified K-fold Cross-Validation}. Di seguito la descrizione degli iperparametri per ogni modello e i valori testati:
-% TODO
-\begin{itemize}[label=-]
-    \item \textbf{Decision Tree}: \textit{max\_depth} (massima profondità dell'albero), \textit{min\_samples\_split} (numero minimo di campioni necessari per suddividere un nodo interno), \textit{min\_samples\_leaf} (numero minimo di campioni necessari per essere in una foglia), \textit{max\_features} (numero di feature da considerare per la migliore suddivisione), \textit{criterion} (funzione per misurare la qualità di una suddivisione)
-    \item \textbf{RandomForest}: \textit{n\_estimators} (numero di alberi nella foresta), \textit{max\_depth}
-    \item \textbf{XGBoost}: \textit{n\_estimators}, \textit{max\_depth}, \textit{learning\_rate}, \textit{subsample}, \textit{colsample\_bytree}
-    \item \textbf{LightGBM}: \textit{n\_estimators}, \textit{max\_depth}, \textit{learning\_rate}, \textit{subsample}, \textit{colsample\_bytree}
+
+\noindent\paragraph{Classificatore LightGBM.}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{learning\_rate}: Velocità con cui il modello impara dai dati durante il processo di addestramento. Un learning rate più basso richiede più iterazioni per raggiungere la convergenza, ma può portare a una migliore generalizzazione e a modelli più stabili. D'altra parte, un learning rate più alto potrebbe accelerare il processo di addestramento. \textbf{Range di valori:} [0.01, 0.05, 0.1].
+    \item \textbf{max\_depth}: Massima profondità dell'albero. \textbf{Range di valori:} [2, 5, 10].
+    \item \textbf{n\_estimators}: Numero di alberi. \textbf{Range di valori:} [50, 100, 200].
+    \item \textbf{lambda}: Parametro di regolarizzazione L2. Un valore più alto di lambda aumenta la forza della regolarizzazione, riducendo così il rischio di overfitting. \textbf{Range di valori:} [0.01, 0.1, 0.5].
+    \item \textbf{num\_leaves}: Numero massimo di foglie per albero. \textbf{Range di valori:} [5, 15].
+    \item \textbf{min\_gain\_to\_split}: Guadagno minimo richiesto per eseguire uno split. \textbf{Range di valori:} [0.1].
 \end{itemize}
+
+\noindent\paragraph{Classificatore DecisionTree.}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{criterion}: Misura la qualità dello split effettuato sui nodi. \textbf{Range di valori:} ["gini", "entropy", "log\_loss"].\\
+          \textit{Descrizioni:}
+          \begin{itemize}
+              \item \textbf{gini}: Misura la "purezza" della divisione dei dati, più precisamente quanto spesso un elemento viene classificato in modo sbagliato
+              \item \textbf{entropy}: Misura la quantità di disordine nei dati. Minimizzare l'entropia significa massimizzare l'information gain
+              \item \textbf{log\_loss}: Logarithmic loss, indicata quando l'output corrisponde a
+              una probabilità piuttosto che a un valore di classe.
+          \end{itemize}
+    \item \textbf{max\_depth}: Massima profondità dell'albero. \textbf{Range di valori:} [5, 10, 20, 40].
+    \item \textbf{min\_samples\_split}: Numero minimo di campioni per suddividere un nodo. \textbf{Range di valori:} [2, 5, 10, 20].
+    \item \textbf{min\_samples\_leaf}: Numero minimo di campioni per essere foglia. \textbf{Range di valori:} [2, 5, 10, 20].
+    \item \textbf{splitter}: Strategia di suddivisione del nodo. \textbf{Range di valori:} ["best"].
+\end{itemize}
+
+\noindent\paragraph{Classificatore RandomForest.}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{criterion}: Criterio di suddivisione. \textbf{Range di valori:} ["gini", "entropy", "log\_loss"].\\
+          \textit{Descrizioni:}
+          \begin{itemize}
+              \item \textbf{gini}: Misura la "purezza" della divisione dei dati, più precisamente quanto spesso un elemento viene classificato in modo sbagliato
+              \item \textbf{entropy}: Misura la quantità di disordine nei dati. Minimizzare l'entropia significa massimizzare l'information gain
+              \item \textbf{log\_loss}: Logarithmic loss, indicata quando l'output corrisponde a
+              una probabilità piuttosto che a un valore di classe.
+          \end{itemize}
+    \item \textbf{n\_estimators}: Numero di alberi nella foresta. \textbf{Range di valori:} [10, 100, 200].
+    \item \textbf{max\_depth}: Massima profondità dell'albero. \textbf{Range di valori:} [5, 10, 20].
+    \item \textbf{min\_samples\_split}: Il numero minimo di esempi necessari affinché possa essere utilizzato un criterio di split. \textbf{Range di valori:} [2, 5, 10].
+    \item \textbf{min\_samples\_leaf}: Il numero minimo di esempi per poter creare una foglia. \textbf{Range di valori:} [2, 5, 10].
+\end{itemize}
+
+\noindent\paragraph{Classificatore XGBoost.}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{learning\_rate}: Velocità con cui il modello impara dai dati durante il processo di addestramento. Un learning rate più basso richiede più iterazioni per raggiungere la convergenza, ma può portare a una migliore generalizzazione e a modelli più stabili. D'altra parte, un learning rate più alto potrebbe accelerare il processo di addestramento. \textbf{Range di valori:} [0.01, 0.05, 0.10].
+    \item \textbf{max\_depth}: Massima profondità degli alberi utilizzati. \textbf{Range di valori:} [5, 10, 20].
+    \item \textbf{n\_estimators}: Numero di alberi utilizzati. \textbf{Range di valori:} [20, 50, 100].
+    \item \textbf{lambda}: Parametro di regolarizzazione L2. Un valore più alto di lambda aumenta la forza della regolarizzazione, riducendo così il rischio di overfitting. \textbf{Range di valori:} [0.01, 0.1, 0.5].
+\end{itemize}
+
 \paragraph{Riproducibilità.} Per garantire la riproducibilità dei risultati, si è scelto di fissare il \textit{seed} per la generazione di numeri casuali al numero \textit{42}.
 \paragraph{Valutazione.} La parte di valutazione è stata fatta utilizzando una \textit{cross\_val\_score}, ovvero un metodo che valuta sempre utilizzando la Cross Validation i modelli addestrati. Per la valutazione delle performance del sistema ho deciso di utilizzare le seguenti metriche:
 \begin{itemize}[label=-]
-    \item \textbf{Balanced Accuracy}: È una versione modificata dell'accuratezza standard che tiene conto dello sbilanciamento delle classi nei dati. Calcola la media delle accuratezze per ciascuna classe, fornendo quindi una valutazione equilibrata delle prestazioni del modello su tutte le classi. Utilizzare un'accuracy normale sarebbe fuorviante, dato che potrebbe bastare al classificatore predire sempre le classi più frequenti per ottenere un'accuracy alta
-    \item \textbf{Cohen's Kappa}: è una misura della concordanza tra le predizioni di un classificatore e i veri valori delle classi, correggendo l'accordo che potrebbe verificarsi solo per caso. Questa metrica tiene conto dell'equilibrio tra le classi e fornisce una valutazione più accurata rispetto alla semplice accuratezza. Il valore di Cohen's Kappa varia da -1 a 1, dove 1 indica una perfetta concordanza tra le predizioni e i veri valori, 0 indica concordanza casuale e valori negativi indicano concordanza peggiore di quella casuale
+    \item \textbf{Balanced Accuracy}: È una versione modificata dell'accuratezza standard che tiene conto dello sbilanciamento delle classi nei dati. Calcola la media delle accuratezze per ciascuna classe, fornendo quindi una valutazione equilibrata delle prestazioni del modello su tutte le classi. Utilizzare un'accuracy normale sarebbe fuorviante, al classificatore potrebbe bastare predire sempre la classe più frequente per ottenere un'accuracy alta, ma questo non significa che il classificatore sia buono. La balanced accuracy è definita come la media delle sensibilità per ciascuna classe.
+    \item \textbf{Cohen's Kappa} \cite{kappa}: è una misura della concordanza tra le predizioni di un classificatore e i veri valori delle classi, correggendo l'accordo che potrebbe verificarsi solo per caso. Questa metrica tiene conto dell'equilibrio tra le classi e fornisce una valutazione più accurata rispetto alla semplice accuratezza. Il valore di Cohen's Kappa varia da -1 a 1, dove 1 indica una perfetta concordanza tra le predizioni e i veri valori, 0 indica concordanza casuale e valori negativi indicano concordanza peggiore di quella casuale
     \item \textbf{Geometric Mean}: è la radice del prodotto della sensibilità per classe. Questa misura cerca di massimizzare l'accuratezza su ciascuna delle classi, mantenendo queste accuratezze bilanciate. Per i problemi multiclasse è la radice n-esima del prodotto della sensibilità per ciascuna classe. Se almeno una classe non viene riconosciuta dal classificatore, la geometric mean sarà 0, pertanto ci servirà per dare soprattutto un \textit{lower bound} di confronto per i nostri modelli.
 \end{itemize}
 \noindent La \textit{GridSearchCV} è stata allenata nel trovare gli iperparametri che massimizzano la \textit{Balanced accuracy}. Sono state poi prese in considerazione \textbf{varianza} e \textbf{deviazione standard} per ogni modello: un modello con una varianza e una deviazione standard più basse è preferibile, in quanto indica che le predizioni sono più coerenti e affidabili.
@@ -75,7 +119,7 @@
     \centering
     \includegraphics[scale=0.5]{img/normal_metrics.png}
 \end{figure}
-\noindent I primi risultati sono incoraggianti, soprattutto per i modelli basati su boosting e bagging, un pò meno per il decision tree. Le metriche non ci danno informazioni particolarmente utili riguardante un possibile overfitting o underfitting, però ci fanno capire come già di base i modelli si comportano abbastanza bene.
+
 
 \paragraph{Curve di apprendimento.} Di seguito si riportano le curve di apprendimento per ogni modello, con tanto di deviazione standard e varianza:
 
@@ -140,15 +184,17 @@
     
 \end{table}
 
-\noindent Il \textbf{Decision Tree} non sembra dare segni di overfitting quanto quasi più di underfitting, dato che l'errore di training si stabilizza dopo circa metà training set, ma l'errore di testing è ancora in discesa ed è un pò lontano dall'errore di traning. Il \textbf{Random Forest} presenta un piccolo picco nell'errore di training dopo circa 2000 esempi, stessa cosa dopo altri 2000, ma comunque sono picchi poco significativi, anche qui l'errore di testing è abbastanza lontano, quindi non si può parlare di overfitting. Il \textbf{LightGBM} mostra dei possibili primi segnali di overfitting: l'errore di training inizia ad aumentare col tempo, l'errore di testing inizia a scendere abbastanza velocemente. L'\textbf{XGBoost} non presenta problemi, riesce ad essere allenato senza problemi, ma l'errore di testing è comunque ancora abbastanza alto, quindi non si può parlare di overfitting. In conclusione, i modelli non presentano segni di overfitting, ma il LightGBM potrebbe presentare dei segni di overfitting in futuro.
-
-\paragraph{Feature importances.} E' stata raccolta anche l'informazione riguardo quali feature abbiano contribuito di più in ogni modello per le predizioni.
+\paragraph{Feature importance.} E' stata raccolta anche l'informazione riguardo quali feature abbiano contribuito di più in ogni modello per le predizioni.
 \\Questo è stato fatto nel primo esperimento, in modo da utilizzare le feature maggiormente predittive per i modelli considerati migliori per costruire la rete bayesiana. Si riporta di seguito solo il grafico relativo al Random Forest, per non appesantire la trattazione, gli altri sono disponibili nel repository:
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.35]{img/feature_importances_RandomForest.png}
 \end{figure}
+
+\paragraph{Valutazione.} I primi risultati sono incoraggianti, soprattutto per i modelli basati su boosting e bagging, un pò meno per il decision tree. Le metriche non ci danno informazioni particolarmente utili riguardante un possibile overfitting o underfitting, però ci fanno capire come già di base i modelli si comportano abbastanza bene. \\
+Il \textbf{Decision Tree} non sembra dare segni di overfitting quanto quasi più di underfitting, dato che l'errore di training si stabilizza dopo circa metà training set, ma l'errore di testing è ancora in discesa ed è un pò lontano dall'errore di traning. Il \textbf{Random Forest} presenta un piccolo picco nell'errore di training dopo circa 2000 esempi, stessa cosa dopo altri 2000, ma comunque sono picchi poco significativi, anche qui l'errore di testing è abbastanza lontano, quindi non si può parlare di overfitting. Il \textbf{LightGBM} mostra dei possibili primi segnali di overfitting: l'errore di training inizia ad aumentare col tempo, l'errore di testing inizia a scendere abbastanza velocemente. L'\textbf{XGBoost} non presenta problemi, riesce ad essere allenato senza problemi, ma l'errore di testing è comunque ancora abbastanza alto, quindi non si può parlare di overfitting. In conclusione, i modelli non presentano segni di overfitting, ma il LightGBM potrebbe presentare dei segni di overfitting in futuro.
+
 
 
 \subsection{Secondo esperimento: class weights vs BalancedRF}
@@ -199,7 +245,7 @@ RandomForest\_\_class\_weight & balanced \\ \bottomrule
     \includegraphics[scale=0.7]{img/cw_metrics.png}
 \end{figure}
 
-\noindent A un primo impatto possiamo vedere come il BalancedRandomForest non è riuscito a mantenere le aspettative, soprattutto se confrontato con il suo "gemello", il Random Forest classico. Rispetto al primo esperimento, le metriche di tutti gli altri modelli sono leggermente migliorati, ma siamo molto vicini ai range di varianza e deviazione standard del primo esperimento.\\
+
 
 \paragraph{Curve di apprendimento.} Di seguito si riportano le curve di apprendimento per ogni modello, con tanto di deviazione standard e varianza:
 
@@ -263,8 +309,7 @@ RandomForest\_\_class\_weight & balanced \\ \bottomrule
     \caption{Varianza degli Errori per i Modelli}
 \end{table}
 
-\noindent Rispetto al primo esperimento il Decision Tree sembra essersi stabilizzato ancora di più, il Random Forest presenta un errore di training decisamente più lineare, il LightGBM non presenta miglioramenti.
-
+\paragraph{Valutazione.} A un primo impatto possiamo vedere come il BalancedRandomForest non è riuscito a mantenere le aspettative, soprattutto se confrontato con il suo "gemello", il Random Forest classico. \\ Rispetto al primo esperimento, le metriche di tutti gli altri modelli sono leggermente migliorate, ma siamo molto vicini ai range di varianza e deviazione standard del primo esperimento. Il Decision Tree sembra essersi stabilizzato ancora di più, il Random Forest presenta un errore di training decisamente più lineare, il LightGBM non presenta miglioramenti.
 
 \subsection{Terzo esperimento: oversampling}
 \noindent L'oversampling consiste nell'aumentare artificialmente il numero di esempi delle classi minoritarie nel dataset di addestramento, in modo da bilanciare meglio la distribuzione delle classi. Ciò viene fatto replicando casualmente le istanze esistenti della classe minoritaria o generando nuove istanze sintetiche utilizzando tecniche come lo SMOTE, che testeremo. \\SMOTE sintetizza nuove istanze per la classe minoritaria creando campioni artificiali lungo le linee che collegano istanze simili nello spazio delle feature. In questo modo, si cerca di mantenere la struttura dei dati originari mentre si aumenta il numero di istanze della classe minoritaria. \\ Andremo a confrontare lo SMOTE con i risultati degli altri esperimenti e con quelli dell'ADASYN, un'altra tecnica di oversampling.\\ ADASYN genera nuovi esempi per le istanze delle classi minoritarie che hanno un alto grado di disomogeneità, ovvero che sono il più possibile differenti dagli esempi della classe maggioritaria per caratteristiche. Questa tecnica a differenza della precedente non riesce a garantire il perfetto ribilanciamento del dataset, ma ad ogni modo riesce quasi del tutto a risanarlo tranne nei casi in cui gli esempi della classe minoritaria sono sparsi e immersi in esempi di classe maggioritaria. \\ Gli algoritmi sono stati utilizzati con 
@@ -311,7 +356,7 @@ Si è prestata particolare attenzione nell'applicazione delle tecniche descritte
     \includegraphics[scale=0.7]{img/smote_metrics.png}
 \end{figure}
 
-\noindent I risultati sono decisamente migliori rispetto ai due esperimenti precedenti, pertanto resta da controllare se vi è overfitting in qualche modello.
+
 
 \paragraph{Curve di apprendimento.} Di seguito si riportano le curve di apprendimento per ogni modello, con tanto di deviazione standard e varianza:
 
@@ -373,7 +418,8 @@ Si è prestata particolare attenzione nell'applicazione delle tecniche descritte
     \end{tabular}
     \caption{Varianza degli Errori per i Modelli}
 \end{table}
-\noindent I valori di deviazione standard e varianza non portano a pensare a overfitting. Guardando le curve notiamo come l'XGBoost si sia comportato bene, stessa cosa per il Random Forest, mentre sorgono dubbi sull'efficacia del Decision Tree e del LightGBM, in particolare quest'ultimo sembra raggiungere una configurazione ideale tra i 6000 e gli 8000 esempi.
+
+\paragraph{Valutazione.} I risultati sono decisamente migliori rispetto ai due esperimenti precedenti, pertanto resta da controllare se vi è overfitting in qualche modello. \\ I valori di deviazione standard e varianza non portano a pensare a overfitting. Guardando le curve notiamo come l'XGBoost si sia comportato bene, stessa cosa per il Random Forest, mentre sorgono dubbi sull'efficacia del Decision Tree e del LightGBM, in particolare quest'ultimo sembra raggiungere una configurazione ideale tra i 6000 e gli 8000 esempi.
 
 \subsubsection{ADASYN}
 \paragraph{Iperparametri.} Di seguito si riportano gli iperparametri ottenuti dalla \textit{GridSearchCV} per ogni modello:
@@ -412,8 +458,6 @@ Si è prestata particolare attenzione nell'applicazione delle tecniche descritte
     \centering
     \includegraphics[scale=0.7]{img/adasyn_metrics.png}
 \end{figure}
-
-\noindent I punteggi sono simili agli esperimenti precedenti, ma non migliori dello SMOTE.
 
 \paragraph{Curve di apprendimento.} Di seguito si riportano le curve di apprendimento per ogni modello, con tanto di deviazione standard e varianza:
 
@@ -478,11 +522,11 @@ Si è prestata particolare attenzione nell'applicazione delle tecniche descritte
     
 \end{table}
 
-\noindent Random Forest e XGBoost risultano molto stabili, l'XGBoost sembra avere avere varianza e deviazione standard migliori, mentre LightGBM ancora una volta è in difficoltà. Il Decision Tree si comporta benino, ma risultando comunque il peggiore tra i modelli.
+\paragraph{Valutazione.} I punteggi sono simili agli esperimenti precedenti, ma non migliori dello SMOTE. \\ Random Forest e XGBoost risultano molto stabili, l'XGBoost sembra avere avere varianza e deviazione standard migliori, mentre LightGBM ancora una volta è in difficoltà. Il Decision Tree si comporta benino, ma risultando comunque il peggiore tra i modelli.
 
 
 \subsection{Quarto esperimento: tecniche miste}
-\noindent Non si è fatto uso di tecniche di undersampling, ovvero di tecniche che riducono il numero di esempi della classe maggioritaria, in quanto dopo un tentativo con un algoritmo di questo tipo i risultati erano imprensentabili, portando a scartare del tutto questa tecnica. In alternativa si proverà a utilizzare delle tecniche miste di oversampling e undersampling: SMOTEEEN e SMOTETomek, tecniche che applicano prima lo SMOTE per fare oversampling, per poi "pulire" il dataset, rimuovendo \textit{noise} e osservazioni "troppo facili da classificare", con tecniche di undersampling (EEN e Tomek)\\ Tomek rimuove quegli esempi di classi differenti che sono molto vicini tra loro, poichè saranno difficili da classificare e non aiutano l'algoritmo a trovare una discriminante. \\ EEN rimuove gli esempi di classe maggioritaria che sono molto vicini a quelli di classe minoritaria o gli esempidove tutti o quasi i vicini sono di classi differenti, poichè potrebbero essere classificati erroneamente.
+\noindent Non si è fatto uso di tecniche di undersampling, ovvero di tecniche che riducono il numero di esempi della classe maggioritaria, in quanto dopo un tentativo con un algoritmo di questo tipo (\textit{ClusterCentroids}, basato su \textit{K-Means}), i risultati erano imprensentabili, portando a scartare del tutto questa tecnica. In alternativa si proverà a utilizzare delle tecniche miste di oversampling e undersampling: SMOTEEEN e SMOTETomek, tecniche che applicano prima lo SMOTE per fare oversampling, per poi "pulire" il dataset, rimuovendo \textit{noise} e osservazioni "troppo facili da classificare", con tecniche di undersampling (EEN e Tomek).\\ Tomek rimuove quegli esempi di classi differenti che sono molto vicini tra loro, poichè saranno difficili da classificare e non aiutano l'algoritmo a trovare una discriminante. \\ EEN rimuove gli esempi di classe maggioritaria che sono molto vicini a quelli di classe minoritaria o gli esempi dove tutti o quasi i vicini sono di classi differenti, poichè potrebbero essere classificati erroneamente.
 
 \subsubsection{SMOTETomek}
 \paragraph{Iperparametri.} Di seguito si riportano gli iperparametri ottenuti dalla \textit{GridSearchCV} per ogni modello:
@@ -522,7 +566,6 @@ Si è prestata particolare attenzione nell'applicazione delle tecniche descritte
     \includegraphics[scale=0.5]{img/tomek_metrics.png}
 \end{figure}
 
-\noindent I risultati sono simili all'esperimento con SMOTE. Verifichiamo se vi è overfitting.
 
 \paragraph{Curve di apprendimento.} Di seguito si riportano le curve di apprendimento per ogni modello, con tanto di deviazione standard e varianza:
 
@@ -587,7 +630,7 @@ Si è prestata particolare attenzione nell'applicazione delle tecniche descritte
     
 \end{table}
 
-\noindent Varianza e deviazione standard sono nella maggior parte dei casi maggiori rispetto all'esperimento con SMOTE e in generale i modelli sembrano aver bisogno di più dati per apprendere, notiamo come l'errore di training non si stabilizza in nessuno dei modelli.
+\paragraph{Valutazione.} I risultati sono simili all'esperimento con SMOTE. \\ Varianza e deviazione standard sono nella maggior parte dei casi maggiori rispetto all'esperimento con SMOTE e in generale i modelli sembrano aver bisogno di più dati per apprendere, notiamo come l'errore di training non si stabilizza in nessuno dei modelli.
 
 \subsubsection{SMOTEENN}
 \paragraph{Iperparametri.} Di seguito si riportano gli iperparametri ottenuti dalla \textit{GridSearchCV} per ogni modello:
@@ -628,7 +671,7 @@ Si è prestata particolare attenzione nell'applicazione delle tecniche descritte
     \includegraphics[scale=0.7]{img/smoteen_metrics.png}
 \end{figure}
 
-\noindent I risultati sono al pari dei primi esperimenti, se non inferiori.
+
 
 \paragraph{Curve di apprendimento.} Di seguito si riportano le curve di apprendimento per ogni modello, con tanto di deviazione standard e varianza:
 
@@ -694,7 +737,7 @@ Si è prestata particolare attenzione nell'applicazione delle tecniche descritte
     
 \end{table}
 
-\noindent Dalle curve si può facilmente notare come i modelli non siano riusciti a stabilizzarsi, e la varianza e la deviazione standard sono molto alte, segno che i modelli non sono riusciti a generalizzare bene. Il numero di esempi non era sufficiente.
+\paragraph{Valutazione.} I risultati sono al pari dei primi esperimenti, se non inferiori. \\ Dalle curve di apprendimento si può facilmente notare come i modelli non siano riusciti a stabilizzarsi, e la varianza e la deviazione standard sono molto alte, segno che i modelli non sono riusciti a generalizzare bene. Il numero di esempi non era sufficiente.
 
 \subsection{Sommario}
 \noindent In generale, i risultati avuti sono accettabili. Non vi è un modello che spicca rispetto a tutti, ma ciò che possiamo affermare con certezza è che l'esperimento con SMOTE è quello globalmente andato meglio. I modelli che si sono distinti sono stati: 

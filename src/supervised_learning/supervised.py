@@ -38,33 +38,33 @@ def returnBestHyperparameters(dataset, target):
 
     # Hyperparameters for each model
     LGBMHyperparameters = {
-        "LGBM__learning_rate": [0.1],  # 0.05
-        "LGBM__max_depth": [10],  # 3
-        "LGBM__n_estimators": [200],  # 200
-        "LGBM__lambda": [0.1],  # 0.1
-        "LGBM__num_leaves": [15],  # 31, 127
+        "LGBM__learning_rate": [0.01, 0.05, 0.1],  # 0.05
+        "LGBM__max_depth": [2, 5, 10],  # 3
+        "LGBM__n_estimators": [50, 100, 200],  # 200
+        "LGBM__lambda": [0.01, 0.1, 0.5],  # 0.1
+        "LGBM__num_leaves": [5, 15],  # 31, 127
         "LGBM__min_gain_to_split": [0.1],
         "LGBM__verbose": [0],
     }
     DecisionTreeHyperparameters = {
-        "DecisionTree__criterion": ["log_loss"],
-        "DecisionTree__max_depth": [40],
-        "DecisionTree__min_samples_split": [5],
-        "DecisionTree__min_samples_leaf": [2],
+        "DecisionTree__criterion": ["gini", "entropy", "log_loss"],
+        "DecisionTree__max_depth": [5, 10, 20, 40],
+        "DecisionTree__min_samples_split": [2, 5, 10, 20],
+        "DecisionTree__min_samples_leaf": [2, 5, 10, 20],
         "DecisionTree__splitter": ["best"],
     }
     RandomForestHyperparameters = {
-        "RandomForest__criterion": ["log_loss"],
-        "RandomForest__n_estimators": [100],
-        "RandomForest__max_depth": [20],
-        "RandomForest__min_samples_split": [2],
-        "RandomForest__min_samples_leaf": [2],
+        "RandomForest__criterion": ["gini", "entropy", "log_loss"],
+        "RandomForest__n_estimators": [10, 100, 200],
+        "RandomForest__max_depth": [5, 10, 20],
+        "RandomForest__min_samples_split": [2, 5, 10],
+        "RandomForest__min_samples_leaf": [2, 5, 10],
     }
     XGBoostHyperparameters = {
-        'XGBoost__learning_rate': [0.10],
-        'XGBoost__max_depth': [10],
-        'XGBoost__n_estimators': [100],
-        'XGBoost__lambda': [0.1]
+        'XGBoost__learning_rate': [0.01, 0.05, 0.10],
+        'XGBoost__max_depth': [5, 10, 20],
+        'XGBoost__n_estimators': [20, 50, 100],
+        'XGBoost__lambda': [0.01, 0.1, 0.5]
     }
 
     # GridSearchCV for each model with the respective hyperparameters

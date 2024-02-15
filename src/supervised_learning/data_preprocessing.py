@@ -18,19 +18,20 @@ def generate_dataset_for_supervised():
     
 
     df_eda = df_eda.select_dtypes(include=["float64", "int64"])
-    df_eda = df_eda.drop(columns=["Binary Rating", "CIK", "SIC Code"])
-    
+
     df_eda = df_eda.drop(
         columns=[
             "EBIT Margin",
             "Long-term Debt / Capital",
             "Operating Margin",
             "Pre-Tax Profit Margin",
-            "ROA - Return On Assets",
+            "ROA - Return On Assets","Binary Rating", "CIK", "SIC Code"
         ]
     )
-    
-    sns.heatmap(df_eda.corr(method='pearson'), annot=True, linewidths=.5, fmt= '.1f', cmap='coolwarm')
+
+    # bigger plot
+    plt.figure(figsize=(15, 15))
+    sns.heatmap(df_eda.corr(method='pearson'), annot=True, linewidths=.1, fmt= '.1f', cmap='coolwarm')
     plt.show()
 
     df = df.drop(
@@ -194,7 +195,7 @@ def generate_dataset_for_supervised():
     df.drop_duplicates()
     # export the new df to a csv file
     print(df.shape)
-    df.to_csv("../../data/dataset_preprocessed.csv", index=False)
+    # df.to_csv("../../data/dataset_preprocessed.csv", index=False)
 
 def prepare_dataset_for_bn():
     df = pd.read_csv(file_path)
@@ -305,7 +306,8 @@ def prepare_dataset_for_bn():
 
     # remap rating agency
 
-    df.to_csv("../../data/dataset_preprocessed_bayesian.csv", index=False)
+    #df.to_csv("../../data/dataset_preprocessed_bayesian.csv", index=False)
 
-# generate_dataset_for_supervised()
+generate_dataset_for_supervised()
 prepare_dataset_for_bn()
+
