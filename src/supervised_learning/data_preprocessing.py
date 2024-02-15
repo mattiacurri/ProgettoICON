@@ -170,31 +170,20 @@ def generate_dataset_for_supervised():
     # Drop the original "Sector" column
     df = df.drop(columns=["Sector"])
     
-    # apply PowerTransformer() to Asset Turnover
 
     # transform rating to int32
+    # apply PowerTransformer() to Asset Turnover
 
     df["Rating"] = df["Rating"].astype("int32")
     df["Asset Turnover"] = PowerTransformer().fit_transform(df[["Asset Turnover"]])
 
-    # apply Standard Scaler to float64 columns of df
 
+    # apply MinMax Scaler to float64 columns of df
     f64 = df.select_dtypes(include=["float64"])
-    # print(df[f64.columns].head())
-
-
     scaler = MinMaxScaler()
-    
     df[f64.columns] = scaler.fit_transform(f64)
-    
-    print(df.info())
-    
-    print(df["Rating"].value_counts())
-    print(df.drop_duplicates().shape)
-    
-    df.drop_duplicates()
+
     # export the new df to a csv file
-    print(df.shape)
     # df.to_csv("../../data/dataset_preprocessed.csv", index=False)
 
 def prepare_dataset_for_bn():
@@ -270,7 +259,7 @@ def prepare_dataset_for_bn():
 
     df["Rating Date"] = pd.to_datetime(df["Rating Date"])
 
-    # new feature year AND month
+    # new feature year month day
 
     df["Year Month Day"] = df["Rating Date"].dt.to_period("D")
 
@@ -278,7 +267,7 @@ def prepare_dataset_for_bn():
     df["Rating"] = df["Rating"].astype("int16")
     df["Asset Turnover"] = PowerTransformer().fit_transform(df[["Asset Turnover"]])
 
-    # apply Standard Scaler to float64 columns of df
+    # apply MinMax Scaler to float64 columns of df
 
     f64 = df.select_dtypes(include=["float64"])
     # print(df[f64.columns].head())
@@ -288,23 +277,14 @@ def prepare_dataset_for_bn():
     df[f64.columns] = scaler.fit_transform(f64)
 
     df = df.drop(columns=["Rating Date"])
-    #print(df.info())
-    #print(df.shape)
-    #print(df.drop_duplicates().shape)
 
-    # trying drop
     df = df.drop(columns=["Year Month Day"])
-    # df = df.drop(columns=["Rating Agency", "Sector"])
     df = df.drop(columns=["Free Cash Flow Per Share", "Return On Tangible Equity", "ROE - Return On Equity"])
 
     discretizer = KBinsDiscretizer(encode='ordinal', strategy='uniform')
     continuous_columns = df.select_dtypes(include=['float64', 'int64', 'int32']).columns
     df[continuous_columns] = discretizer.fit_transform(df[continuous_columns])
     df = df.drop_duplicates()
-    print(df.info())
-    print(df.shape)
-
-    # remap rating agency
 
     #df.to_csv("../../data/dataset_preprocessed_bayesian.csv", index=False)
 

@@ -98,7 +98,6 @@ def returnBestHyperparameters(dataset, target):
         cv=CV,
         n_jobs=-1,
         scoring="balanced_accuracy",
-        verbose=3
     )
 
     gridSearchCV_rfc = GridSearchCV(
@@ -107,7 +106,6 @@ def returnBestHyperparameters(dataset, target):
         cv=CV,
         n_jobs=-1,
         scoring="balanced_accuracy",
-        verbose=3
     )
 
     # Fitting the models with the training data
@@ -321,7 +319,6 @@ def trainModelKFold(dataSet, target):
     model["RandomForest"]["cohen_kappa"] = results_rfc[kappa_scorer]
     model["RandomForest"]["geometric_mean"] = results_rfc[geometric_mean]
 
-
     # Plotting the learning curves for each model
     plot_learning_curves(dtc, X, y, target, "DecisionTree", 'Class Weight', cv, smote=True)
     plot_learning_curves(rfc, X, y, target, "RandomForest", 'Class Weight', cv, smote=True)
@@ -355,25 +352,12 @@ names = ["DecisionTree", "RandomForest", "LightGBM", "BalancedRandomForest"]
 
 for i, m in enumerate(models):
     m.fit(X_train, y_train)
-
     importances = m.feature_importances_
-
     indices = np.argsort(importances)[::-1]
-
     plt.figure(figsize=(15, 15))
-
     plt.title(f"{names[i]} Feature Importances")
-
-    # horizontal bar plot
-
     plt.barh(range(X_train.shape[1]), importances[indices], align="center")
-
     plt.yticks(range(X_train.shape[1]), [X_train.columns[i] for i in indices])
-
     plt.xlabel("Relative Importance")
-
-    # save to file
-
     plt.savefig(f'../../plots/feature_importances_class_weights_{names[i]}.png')
-
     plt.show()

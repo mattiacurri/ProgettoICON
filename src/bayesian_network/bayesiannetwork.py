@@ -48,8 +48,6 @@ def visualizeBayesianNetwork(bayesianNetwork: BayesianNetwork):
 
 
 def visualizeInfo(bayesianNetwork: BayesianNetwork):
-    # Get the CPDs
-    print(f'Check model: {bayesianNetwork.check_model()}\n')
     for cpd in bayesianNetwork.get_cpds():
         print(f'CPT of {cpd.variable}:')
         print(cpd, '\n')
@@ -148,5 +146,3 @@ query_report(infer, variables=['Debt/Equity Ratio'], evidence={'Rating': 3},
 query_report(infer, variables=['Debt/Equity Ratio', 'Operating Cash Flow Per Share'], evidence={'Rating': 3},
              desc='Probabilità che una azienda sia molto rischiosa dato il debt/equity ratio e '
                   'l\'operating cash flow per share')
-
-markov_blanket_of('Rating')

@@ -1,6 +1,5 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_score, classification_report
 from sklearn.model_selection import learning_curve
 
 
@@ -8,10 +7,6 @@ from sklearn.model_selection import learning_curve
 def plot_learning_curves(model, X, y, differentialColumn, model_name, method_name, cv, scoring='balanced_accuracy', smote=False):
     train_sizes, train_scores, test_scores = learning_curve(model, X, y, cv=cv, scoring=scoring, n_jobs=-1,
                                                             random_state=42)
-    #for train_size, cv_train_scores, cv_test_scores in zip(train_sizes, train_scores, test_scores):
-        #print(f"{train_size} samples were used to train the model")
-        #print(f"The average train accuracy is {cv_train_scores.mean():.2f}")
-        #print(f"The average test accuracy is {cv_test_scores.mean():.2f}")
 
     # Calcola gli errori su addestramento e test
     train_errors = 1 - train_scores
@@ -39,9 +34,6 @@ def plot_learning_curves(model, X, y, differentialColumn, model_name, method_nam
         file.write(f"Test Error Var: {test_errors_var[-1]}\n")
         file.close()
 
-
-    # save to file
-    # Stampare su terminale la deviazione standard e la varianza
     print(
         f"\033[94m{model_name} - Train Error Std: {train_errors_std[-1]}, Test Error Std: {test_errors_std[-1]}, Train Error Var: {train_errors_var[-1]}, Test Error Var: {test_errors_var[-1]}\033[0m")
     if smote:

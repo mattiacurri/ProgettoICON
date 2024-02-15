@@ -355,20 +355,10 @@ X = df.drop(columns=["Rating"])
 y = df["Rating"]
 adasyn = ADASYN(random_state=42, sampling_strategy="minority")
 
-# ("SMOTENC", smotenc),
-
 samplingPipes = [("ADASYN", adasyn)]
-
-# ("SMOTEENN", smoteenn), ("SMOTETomek", smotetomek), ("ClusterCentroids", clustercentroids),
-# ("ClusterCentroids", clustercentroids), ("ADASYN", adasyn)
-
-# print(df.shape)
 
 df = df.drop_duplicates()
 df = df.rename(columns = lambda x:re.sub('[^A-Za-z0-9_]+', '', x))
-
-# print(df["Rating"].value_counts())
-# print(df.shape)
 
 for sPipe in samplingPipes:
     print("\033[94m")

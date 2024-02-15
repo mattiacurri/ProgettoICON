@@ -18,7 +18,6 @@ from sklearn.model_selection import (
 from sklearn.tree import DecisionTreeClassifier
 from imblearn.over_sampling import SMOTE, RandomOverSampler, SMOTENC
 from imblearn.combine import SMOTEENN, SMOTETomek
-from imblearn.under_sampling import RandomUnderSampler, ClusterCentroids
 from imblearn.over_sampling import ADASYN
 from xgboost import XGBClassifier
 from sklearn.base import TransformerMixin, BaseEstimator
@@ -379,25 +378,17 @@ smoteenn = SMOTEENN(random_state=42, sampling_strategy="all")
 smotetomek = SMOTETomek(random_state=42, sampling_strategy="all")
 
 # -- UNDERSAMPLER -- #
-#clustercentroids = ClusterCentroids(random_state=42, sampling_strategy="all") risultati assolutamente impresentabili
+# clustercentroids = ClusterCentroids(random_state=42, sampling_strategy="all") risultati assolutamente impresentabili
 
 # -- ADAPTIVE SYNTHETIC SAMPLERS -- #
 adasyn = ADASYN(random_state=42, sampling_strategy="all")
 
 # ("SMOTENC", smotenc),
 candidates = [("SMOTE", smote), ("SMOTEENN", smoteenn), ("SMOTETomek", smotetomek)]
-samplingPipes = [("SMOTETomek", smotetomek)]
-
-# ("SMOTEENN", smoteenn), ("SMOTETomek", smotetomek), ("ClusterCentroids", clustercentroids),
-# ("ClusterCentroids", clustercentroids), ("ADASYN", adasyn)
-
-# print(df.shape)
+samplingPipes = [("SMOTE", smote), ("SMOTEENN", smoteenn), ("SMOTETomek", smotetomek)]
 
 df = df.drop_duplicates()
-df = df.rename(columns = lambda x:re.sub('[^A-Za-z0-9_]+', '', x))
-
-# print(df["Rating"].value_counts())
-# print(df.shape)
+df = df.rename(columns = lambda x:re.sub('[^A-Za-z0-9_]+', '', x)) # for LightGBM
 
 for sPipe in samplingPipes:
     print("\033[94m")
@@ -405,32 +396,16 @@ for sPipe in samplingPipes:
     print("\033[0m")
     model, rfc, dtc, xgb, lgmb, X_test, y_test, X_train, y_train = trainModelKFold(df, target, sPipe,
                                                                                         True)
-    # plot the feature importances for each model
-
     models = [dtc, rfc, xgb, lgmb]
     names = ["DecisionTree", "RandomForest", "XGBoost", "LightGBM"]
-
     for i, m in enumerate(models):
         m.fit(X_train, y_train)
-
         importances = m.feature_importances_
-
         indices = np.argsort(importances)[::-1]
-
         plt.figure(figsize=(15, 15))
-
         plt.title(f"{names[i]} Feature Importances for {sPipe[0]}")
-
-        # horizontal bar plot
-
         plt.barh(range(X_train.shape[1]), importances[indices], align="center")
-
         plt.yticks(range(X_train.shape[1]), [X_train.columns[i] for i in indices])
-
         plt.xlabel("Relative Importance")
-
-        # save to file
-
         plt.savefig(f'../../plots/SMOTEPipeline/feature_importances_{names[i]}_{sPipe[0]}.png')
-
         plt.show()

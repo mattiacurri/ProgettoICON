@@ -4,7 +4,7 @@ from imblearn.metrics import geometric_mean_score
 from sklearn.ensemble import RandomForestClassifier
 from imblearn.pipeline import Pipeline
 import re
-from plot import visualizeMetricsGraphs, plot_learning_curves, sturgeRule, visualizeAspectRatioChart
+from plot import visualizeMetricsGraphs, plot_learning_curves, sturgeRule
 from sklearn.model_selection import (
     GridSearchCV,
     cross_val_score,
@@ -38,11 +38,11 @@ def returnBestHyperparameters(dataset, target):
 
     # Hyperparameters for each model
     LGBMHyperparameters = {
-        "LGBM__learning_rate": [0.01, 0.05, 0.1],  # 0.05
-        "LGBM__max_depth": [2, 5, 10],  # 3
-        "LGBM__n_estimators": [50, 100, 200],  # 200
-        "LGBM__lambda": [0.01, 0.1, 0.5],  # 0.1
-        "LGBM__num_leaves": [5, 15],  # 31, 127
+        "LGBM__learning_rate": [0.01, 0.05, 0.1],
+        "LGBM__max_depth": [2, 5, 10],
+        "LGBM__n_estimators": [50, 100, 200],
+        "LGBM__lambda": [0.01, 0.1, 0.5],
+        "LGBM__num_leaves": [5, 15],
         "LGBM__min_gain_to_split": [0.1],
         "LGBM__verbose": [0],
     }
@@ -301,7 +301,7 @@ def trainModelKFold(dataSet, target):
 file_path = "../../data/dataset_preprocessed.csv"
 
 df = pd.read_csv(file_path)
-df = df.rename(columns=lambda x: re.sub('[^A-Za-z0-9_]+', '', x))
+df = df.rename(columns=lambda x: re.sub('[^A-Za-z0-9_]+', '', x)) # for LightGBM
 
 target = "Rating"
 
@@ -320,25 +320,12 @@ names = ["DecisionTree", "RandomForest", "XGBoost", "LightGBM"]
 
 for i, m in enumerate(models):
     m.fit(X_train, y_train)
-
     importances = m.feature_importances_
-
     indices = np.argsort(importances)[::-1]
-
     plt.figure(figsize=(15, 15))
-
     plt.title(f"{names[i]} Feature Importances")
-
-    # horizontal bar plot
-
     plt.barh(range(X_train.shape[1]), importances[indices], align="center")
-
     plt.yticks(range(X_train.shape[1]), [X_train.columns[i] for i in indices])
-
     plt.xlabel("Relative Importance")
-
-    # save to file
-
     plt.savefig(f'../../plots/feature_importances_{names[i]}.png')
-
     plt.show()
