@@ -142,7 +142,8 @@ print(correlation_score(bayesianNetwork, df, score=balanced_accuracy_score))
 # print(multi_predict(bayesianNetwork, 10))
 infer = VariableElimination(bayesianNetwork)
 query_report(infer, variables=['Debt/Equity Ratio'], evidence={'Rating': 3},
-             desc='Probabilità che una azienda sia molto rischiosa dato il debt/equity ratio')
+             desc='Data la osservazione che una azienda è molto rischiosa qual è la distribuzione di probabilità '
+                  'per Debt/Equity Ratio')
 query_report(infer, variables=['Debt/Equity Ratio', 'Operating Cash Flow Per Share'], evidence={'Rating': 3},
-             desc='Probabilità che una azienda sia molto rischiosa dato il debt/equity ratio e '
-                  'l\'operating cash flow per share')
+             desc='Data la osservazione che una azienda è molto rischiosa qual è la distribuzione di probabilità '
+                  'congiunta di Debt/Equity Ratio e Operating Cash Flow Per Share')

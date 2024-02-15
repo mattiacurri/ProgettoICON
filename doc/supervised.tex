@@ -164,7 +164,7 @@
     RandomForest & 0.004364244206597904 & 0.014128073154668751 \\
     \bottomrule
     \end{tabular}
-    \caption{Errori Standard per i Modelli}
+    \caption{Deviazione standard dell'errore per i Modelli}
     
 \end{table}
 
@@ -198,7 +198,7 @@ Il \textbf{Decision Tree} non sembra dare segni di overfitting quanto quasi più
 
 
 \subsection{Secondo esperimento: class weights vs BalancedRF}
-\noindent La tecnica del class weight assegna pesi differenti alle classi durante il processo di addestramento del modello. In particolare, si attribuiscono pesi maggiori alle classi minoritarie e pesi minori alle classi maggioritarie. Questo consente al modello di dare maggiore importanza alle istanze delle classi minoritarie durante l'addestramento, venendo penalizzato meno per gli errori commessi su queste classi. In questo modo, il modello sarà in grado di apprendere meglio le caratteristiche delle classi minoritarie e di migliorare le prestazioni su queste classi.\\
+\noindent La tecnica del class weight assegna pesi differenti alle classi durante il processo di addestramento del modello. In particolare, si attribuiscono pesi maggiori alle classi minoritarie e pesi minori alle classi maggioritarie. Questo consente al modello di dare maggiore importanza alle istanze delle classi minoritarie durante l'addestramento. In questo modo, il modello sarà in grado di apprendere meglio le caratteristiche delle classi minoritarie e di migliorare le prestazioni su queste classi.\\
 I pesi delle classi possono essere calcolati in diversi modi. Uno dei metodi comuni è utilizzare l'inverso della frequenza delle classi nel dataset, che è la tecnica che andremo ad utilizzare.\\ \\ Per questo esperimento, andremo a usare tre modelli, tagliando fuori l'XGBoost, in quanto non supporta nativamente la possibilità di assegnare un peso alle classi.\\ In alternativa si utilizzerà un \textit{BalancedRandomForest}, che si differenzia dal classico \textit{Random Forest} per il fatto che estrarrà un campione su cui allenare ogni singolo \textit{decision tree} dalla classe di minoranza e campionerà con sostituzione lo stesso numero di campioni dalla classe di maggioranza. E' un modello che si presta bene proprio per classificazione con classi sbilanciate, pertanto lo testeremo contro dei modelli impostati con un \textbf{bias} verso le classi minoritarie.
 
 \paragraph{Iperparametri.} Per il BalancedRandomForest lo spazio di ricerca degli iperparametri scelto è il medesimo dei Random Forest. Di seguito si riportano gli iperparametri ottenuti dalla \textit{GridSearchCV} per ogni modello:
@@ -290,7 +290,7 @@ RandomForest\_\_class\_weight & balanced \\ \bottomrule
     RandomForest & 0.0018445912002196091 & 0.02129919916812779 \\
     \bottomrule
     \end{tabular}
-    \caption{Errori Standard per i Modelli}
+    \caption{Deviazione standard dell'errore per i Modelli}
 \end{table}
 
 
@@ -401,7 +401,7 @@ Si è prestata particolare attenzione nell'applicazione delle tecniche descritte
     RandomForest & 0.000739498264938402 & 0.004926394385656445 \\
     \bottomrule
     \end{tabular}
-    \caption{Errori Standard per i Modelli}
+    \caption{Deviazione standard dell'errore per i Modelli}
 \end{table}
 
 \begin{table}[H]
@@ -502,7 +502,7 @@ Si è prestata particolare attenzione nell'applicazione delle tecniche descritte
     RandomForest & 0.0028043557998990395 & 0.01884405548317221 \\
     \bottomrule
     \end{tabular}
-    \caption{Errori Standard per i Modelli}
+    \caption{Deviazione standard dell'errore per i Modelli}
     
 \end{table}
 
@@ -610,7 +610,7 @@ Si è prestata particolare attenzione nell'applicazione delle tecniche descritte
     RandomForest & 0.001156335935796055 & 0.005023366391826634 \\
     \bottomrule
     \end{tabular}
-    \caption{Errori Standard per i Modelli}
+    \caption{Deviazione standard dell'errore per i Modelli}
     
 \end{table}
 
@@ -717,7 +717,7 @@ Si è prestata particolare attenzione nell'applicazione delle tecniche descritte
     RandomForest & 0.00802437542204398 & 0.03194225646631045 \\
     \bottomrule
     \end{tabular}
-    \caption{Errori Standard per i Modelli}
+    \caption{Deviazione standard dell'errore per i Modelli}
     
 \end{table}
 
