@@ -1,2 +1,0 @@
-Train Error Std: 7.913826025064872e-05
-Test Error Std: 0.01283121028754352

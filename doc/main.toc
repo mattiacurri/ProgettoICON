@@ -1,2 +1,47 @@
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
+\contentsline {section}{\numberline {1}Introduzione}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Elenco argomenti di interesse}{2}{subsection.1.1}%
+\contentsline {section}{\numberline {2}Preprocessing dei dati}{3}{section.2}%
+\contentsline {section}{\numberline {3}Apprendimento Supervisionato}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Modelli e metodologie utilizzate}{6}{subsection.3.1}%
+\contentsline {paragraph}{Modelli adottati.}{6}{section*.5}%
+\contentsline {paragraph}{Train Test Split.}{6}{section*.6}%
+\contentsline {paragraph}{Cross-Validation.}{6}{section*.7}%
+\contentsline {paragraph}{Ricerca degli iperparametri.}{6}{section*.8}%
+\contentsline {paragraph}{Riproducibilità.}{7}{section*.9}%
+\contentsline {paragraph}{Valutazione.}{7}{section*.10}%
+\contentsline {subsection}{\numberline {3.2}Primo esperimento}{7}{subsection.3.2}%
+\contentsline {paragraph}{Iperparametri.}{7}{section*.11}%
+\contentsline {paragraph}{Risultati.}{8}{section*.13}%
+\contentsline {paragraph}{Curve di apprendimento.}{8}{section*.15}%
+\contentsline {paragraph}{Feature importances.}{10}{section*.19}%
+\contentsline {subsection}{\numberline {3.3}Secondo esperimento: class weights vs BalancedRF}{10}{subsection.3.3}%
+\contentsline {paragraph}{Iperparametri.}{11}{section*.21}%
+\contentsline {paragraph}{Risultati.}{11}{section*.23}%
+\contentsline {paragraph}{Curve di apprendimento.}{12}{section*.25}%
+\contentsline {subsection}{\numberline {3.4}Terzo esperimento: oversampling}{14}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}SMOTE}{14}{subsubsection.3.4.1}%
+\contentsline {paragraph}{Iperparametri.}{14}{section*.29}%
+\contentsline {paragraph}{Risultati.}{15}{section*.31}%
+\contentsline {paragraph}{Curve di apprendimento.}{15}{section*.33}%
+\contentsline {subsubsection}{\numberline {3.4.2}ADASYN}{17}{subsubsection.3.4.2}%
+\contentsline {paragraph}{Iperparametri.}{17}{section*.37}%
+\contentsline {paragraph}{Risultati.}{17}{section*.39}%
+\contentsline {paragraph}{Curve di apprendimento.}{18}{section*.41}%
+\contentsline {subsection}{\numberline {3.5}Quarto esperimento: tecniche miste}{19}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.5.1}SMOTETomek}{19}{subsubsection.3.5.1}%
+\contentsline {paragraph}{Iperparametri.}{19}{section*.45}%
+\contentsline {paragraph}{Risultati.}{19}{section*.47}%
+\contentsline {paragraph}{Curve di apprendimento.}{20}{section*.49}%
+\contentsline {subsubsection}{\numberline {3.5.2}SMOTEENN}{21}{subsubsection.3.5.2}%
+\contentsline {paragraph}{Iperparametri.}{21}{section*.53}%
+\contentsline {paragraph}{Risultati.}{22}{section*.55}%
+\contentsline {paragraph}{Curve di apprendimento.}{22}{section*.57}%
+\contentsline {subsection}{\numberline {3.6}Sommario}{23}{subsection.3.6}%
+\contentsline {section}{\numberline {4}Ragionamento probabilistico e Bayesian Network}{24}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Apprendimento della struttura}{24}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Generazione di sample}{25}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Gestione di dati mancanti}{25}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Query di esempio}{25}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Conclusioni e Sviluppi futuri}{26}{section.5}%

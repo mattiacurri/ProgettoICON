@@ -33,9 +33,27 @@
 \everymath{\displaystyle}
 
 
+%\cite{nome}
+
+
+
 \begin{document}
+
+  \bibliographystyle{plain} % We choose the "plain" reference style
   \input{front}
   \tableofcontents
+  \newpage
+
+  \input{intro}
+  \newpage
+  \input{preprocessing}
+  \newpage
+  \input{supervised}
+  \newpage
+  \input{bn}
+  \newpage
+  \input{future}
+  \newpage
   
-  
+  \bibliography{bibliography} % Entries are in the bibliography.bib file
 \end{document}
