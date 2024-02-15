@@ -1,0 +1,1294 @@
+Rating Agency,Rating,Sector,Current Ratio,Debt/Equity Ratio,Gross Margin,EBITDA Margin,Net Profit Margin,Asset Turnover,ROI - Return On Investment,Operating Cash Flow Per Share
+Standard & Poor's Ratings Services,0,Utils,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,0,BusEq,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Shops,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Shops,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Manuf,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Utils,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,1,BusEq,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,0,NoDur,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Utils,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Manuf,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Other,0.0,4.0,4.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Manuf,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Other,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Standard & Poor's Ratings Services,2,NoDur,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,1,NoDur,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,BusEq,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Manuf,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Shops,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Chems,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Utils,0.0,4.0,2.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Utils,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,BusEq,1.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,0,BusEq,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Utils,0.0,4.0,2.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Other,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Utils,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Other,0.0,4.0,4.0,3.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Telcm,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Other,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+DBRS,1,Utils,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Other,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Hlth,0.0,4.0,4.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Money,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Utils,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Hlth,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Chems,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Other,0.0,4.0,4.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Utils,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Durbl,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Hlth,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,BusEq,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,BusEq,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,0,BusEq,1.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Hlth,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Utils,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Manuf,0.0,4.0,2.0,2.0,3.0,3.0,2.0,1.0
+Standard & Poor's Ratings Services,0,Enrgy,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Manuf,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Other,0.0,4.0,3.0,2.0,2.0,1.0,2.0,1.0
+Standard & Poor's Ratings Services,3,Other,4.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,BusEq,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Hlth,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Durbl,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Chems,0.0,4.0,2.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Money,0.0,4.0,3.0,3.0,3.0,0.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Other,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Shops,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Enrgy,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Other,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Enrgy,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Enrgy,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Shops,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Enrgy,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,3,BusEq,0.0,4.0,3.0,2.0,3.0,2.0,2.0,1.0
+Standard & Poor's Ratings Services,1,Telcm,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,3,Durbl,0.0,0.0,2.0,2.0,3.0,4.0,3.0,1.0
+Standard & Poor's Ratings Services,0,BusEq,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Enrgy,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Enrgy,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,NoDur,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Manuf,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Manuf,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,3,Telcm,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Other,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,0,BusEq,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Manuf,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Utils,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Chems,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,3,BusEq,0.0,4.0,3.0,2.0,3.0,3.0,1.0,1.0
+Standard & Poor's Ratings Services,0,Chems,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,0,BusEq,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+DBRS,0,Utils,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Hlth,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,BusEq,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Enrgy,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Money,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Enrgy,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,1,BusEq,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,0,NoDur,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,3,Manuf,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Manuf,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Shops,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Standard & Poor's Ratings Services,2,NoDur,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Durbl,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,0,NoDur,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Other,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Other,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Utils,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Manuf,0.0,4.0,3.0,2.0,3.0,0.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Manuf,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,1,NoDur,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Telcm,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Other,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,BusEq,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,3,Other,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Manuf,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Money,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,3,Other,1.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,3,Other,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Enrgy,0.0,4.0,3.0,3.0,3.0,0.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Other,0.0,4.0,2.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Hlth,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,3,Durbl,0.0,4.0,2.0,2.0,3.0,3.0,4.0,1.0
+Standard & Poor's Ratings Services,2,BusEq,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Telcm,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,NoDur,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,NoDur,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,0,NoDur,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Other,0.0,4.0,4.0,3.0,3.0,2.0,4.0,1.0
+Standard & Poor's Ratings Services,1,Chems,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,BusEq,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,3,Manuf,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Enrgy,0.0,4.0,3.0,3.0,3.0,1.0,3.0,4.0
+Standard & Poor's Ratings Services,0,Utils,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,NoDur,0.0,4.0,4.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Utils,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,1,BusEq,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Manuf,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Chems,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Other,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,BusEq,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Durbl,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Enrgy,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,0,BusEq,0.0,0.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Enrgy,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Hlth,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Telcm,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Other,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Money,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Telcm,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Chems,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,2,BusEq,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+DBRS,1,Telcm,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Other,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Shops,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Hlth,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Telcm,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,3,Hlth,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Hlth,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,0,BusEq,0.0,4.0,2.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Other,0.0,4.0,2.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Manuf,0.0,4.0,2.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Other,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Manuf,0.0,4.0,4.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,2,BusEq,0.0,4.0,3.0,2.0,3.0,3.0,2.0,1.0
+Standard & Poor's Ratings Services,2,Other,0.0,3.0,3.0,3.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Money,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Money,0.0,4.0,3.0,3.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,0,Manuf,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,2,Shops,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Fitch Ratings,1,Manuf,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,0,Utils,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,Telcm,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Fitch Ratings,0,Hlth,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Hlth,0.0,4.0,4.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,1,Shops,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Fitch Ratings,2,BusEq,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,2,BusEq,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,0,Chems,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Hlth,0.0,4.0,3.0,2.0,3.0,3.0,3.0,0.0
+Moody's Investors Service,2,BusEq,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,1,Manuf,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,BusEq,0.0,4.0,3.0,3.0,3.0,0.0,3.0,1.0
+Moody's Investors Service,1,Utils,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,Durbl,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Fitch Ratings,2,Durbl,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,Enrgy,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Fitch Ratings,1,Utils,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Fitch Ratings,0,Telcm,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,0,Telcm,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+"Japan Credit Rating Agency,Ltd.",0,Telcm,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Durbl,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,1,Utils,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,1,Utils,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Moody's Investors Service,0,Money,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Fitch Ratings,0,Shops,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Moody's Investors Service,1,Hlth,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Fitch Ratings,1,Hlth,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,BusEq,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,1,BusEq,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,0,BusEq,1.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Fitch Ratings,0,NoDur,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,0,NoDur,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,1,NoDur,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,0,Enrgy,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Fitch Ratings,1,Enrgy,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,0,NoDur,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Fitch Ratings,0,NoDur,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Moody's Investors Service,0,NoDur,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Moody's Investors Service,2,Shops,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Moody's Investors Service,2,Manuf,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,1,Shops,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Moody's Investors Service,3,Shops,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Shops,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,0,Hlth,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Utils,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Fitch Ratings,1,Utils,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Fitch Ratings,1,Shops,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,1,Manuf,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,2,Other,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Fitch Ratings,1,Shops,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Moody's Investors Service,1,Telcm,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Fitch Ratings,1,NoDur,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,0,BusEq,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Fitch Ratings,0,BusEq,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,0,Enrgy,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Fitch Ratings,1,Manuf,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,1,Other,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,0,Hlth,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,3,Other,3.0,4.0,2.0,2.0,3.0,1.0,3.0,0.0
+Moody's Investors Service,3,Other,3.0,4.0,2.0,2.0,3.0,1.0,3.0,0.0
+Moody's Investors Service,2,Other,3.0,4.0,2.0,2.0,3.0,1.0,3.0,0.0
+Fitch Ratings,2,Other,3.0,4.0,2.0,2.0,3.0,1.0,3.0,0.0
+Fitch Ratings,3,Other,3.0,4.0,2.0,2.0,3.0,1.0,3.0,0.0
+Moody's Investors Service,0,Hlth,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,3,Manuf,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Shops,0.0,4.0,3.0,2.0,3.0,4.0,3.0,1.0
+Moody's Investors Service,1,Hlth,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,1,Utils,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,1,Durbl,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,1,Hlth,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,3,Other,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Fitch Ratings,1,Chems,0.0,4.0,2.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Chems,0.0,4.0,2.0,2.0,3.0,1.0,2.0,1.0
+Moody's Investors Service,2,Other,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Shops,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Fitch Ratings,0,Hlth,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,1,NoDur,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Fitch Ratings,0,NoDur,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Money,0.0,4.0,3.0,2.0,3.0,0.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Money,0.0,4.0,3.0,2.0,3.0,0.0,3.0,1.0
+Moody's Investors Service,0,Shops,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,1,Other,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,Enrgy,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,1,Shops,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Chems,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,1,Chems,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Enrgy,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Fitch Ratings,0,NoDur,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Fitch Ratings,1,NoDur,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,0,NoDur,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,0,Other,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,1,Enrgy,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,0,BusEq,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,1,Enrgy,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Shops,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,Shops,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,3,Other,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,3,Other,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Fitch Ratings,0,Manuf,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,0,Manuf,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Other,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,1,Enrgy,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Money,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Moody's Investors Service,2,Shops,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,2,Telcm,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,1,Telcm,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,0,Enrgy,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,0,BusEq,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Manuf,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Fitch Ratings,0,NoDur,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Manuf,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Manuf,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Fitch Ratings,1,Telcm,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Telcm,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Durbl,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Moody's Investors Service,2,Durbl,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Fitch Ratings,2,Hlth,0.0,4.0,4.0,2.0,3.0,2.0,3.0,1.0
+Fitch Ratings,2,Utils,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Fitch Ratings,1,BusEq,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,1,BusEq,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Fitch Ratings,0,BusEq,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,Other,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,3,Enrgy,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Moody's Investors Service,2,Enrgy,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Moody's Investors Service,1,NoDur,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Fitch Ratings,1,NoDur,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Fitch Ratings,0,Enrgy,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,0,Enrgy,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,Telcm,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Telcm,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Fitch Ratings,2,NoDur,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,NoDur,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Shops,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,0,BusEq,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,0,Shops,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Fitch Ratings,2,Money,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Fitch Ratings,0,Manuf,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,2,Telcm,0.0,4.0,3.0,2.0,3.0,0.0,3.0,1.0
+Fitch Ratings,2,Other,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Utils,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Fitch Ratings,1,BusEq,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,2,Hlth,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,1,Shops,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Fitch Ratings,1,Shops,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,NoDur,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,2,NoDur,0.0,4.0,4.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,1,Hlth,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,1,NoDur,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,0,NoDur,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Fitch Ratings,1,Utils,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,Other,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Enrgy,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Fitch Ratings,1,Utils,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Fitch Ratings,1,Chems,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Chems,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,3,BusEq,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,BusEq,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,1,Manuf,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Fitch Ratings,3,Utils,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,3,Utils,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,1,Utils,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Hlth,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,1,Enrgy,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,2,Telcm,0.0,2.0,3.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,1,Other,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Money,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Fitch Ratings,1,Other,0.0,4.0,4.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Shops,0.0,4.0,3.0,2.0,3.0,4.0,3.0,1.0
+Moody's Investors Service,1,Chems,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Other,0.0,4.0,4.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,2,Chems,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,2,BusEq,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,Shops,0.0,4.0,4.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,1,BusEq,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,1,BusEq,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Fitch Ratings,1,BusEq,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Fitch Ratings,1,NoDur,0.0,4.0,3.0,2.0,3.0,4.0,3.0,1.0
+Fitch Ratings,2,Manuf,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Fitch Ratings,1,Manuf,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Fitch Ratings,1,Other,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Other,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Other,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Shops,0.0,4.0,3.0,2.0,3.0,4.0,3.0,1.0
+Moody's Investors Service,1,Shops,0.0,4.0,3.0,2.0,3.0,4.0,3.0,1.0
+Moody's Investors Service,2,Manuf,0.0,4.0,4.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,1,NoDur,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Fitch Ratings,1,Manuf,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Hlth,0.0,4.0,4.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,0,Hlth,0.0,4.0,4.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,3,Telcm,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,3,Manuf,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,2,Hlth,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Shops,0.0,4.0,2.0,2.0,3.0,4.0,3.0,0.0
+Moody's Investors Service,2,Enrgy,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,Hlth,0.0,4.0,4.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,0,Enrgy,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,1,NoDur,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Fitch Ratings,1,Durbl,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Fitch Ratings,0,Durbl,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,1,Manuf,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,1,Enrgy,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Other,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Moody's Investors Service,2,Other,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Hlth,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Fitch Ratings,0,Other,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,0,NoDur,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,0,NoDur,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,2,NoDur,0.0,4.0,3.0,1.0,1.0,1.0,2.0,1.0
+Fitch Ratings,2,NoDur,0.0,4.0,3.0,1.0,1.0,1.0,2.0,1.0
+Standard & Poor's Ratings Services,3,Other,0.0,4.0,2.0,2.0,3.0,2.0,2.0,0.0
+Moody's Investors Service,3,Other,0.0,4.0,2.0,2.0,3.0,2.0,2.0,0.0
+Fitch Ratings,3,Other,0.0,4.0,2.0,2.0,3.0,2.0,2.0,0.0
+Moody's Investors Service,1,Money,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Other,0.0,4.0,3.0,2.0,3.0,4.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Utils,0.0,4.0,4.0,2.0,3.0,0.0,3.0,1.0
+Moody's Investors Service,1,Utils,0.0,4.0,4.0,2.0,3.0,0.0,3.0,1.0
+Fitch Ratings,2,Money,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+HR Ratings de Mexico S.A. de C.V.,0,NoDur,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Fitch Ratings,1,NoDur,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,1,NoDur,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,NoDur,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Fitch Ratings,1,Other,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,1,Other,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,1,BusEq,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Money,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Money,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,BusEq,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Standard & Poor's Ratings Services,1,BusEq,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Moody's Investors Service,1,BusEq,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,1,BusEq,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,1,BusEq,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,Other,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Other,0.0,4.0,3.0,3.0,3.0,0.0,3.0,1.0
+Moody's Investors Service,1,Other,0.0,4.0,3.0,3.0,3.0,0.0,3.0,1.0
+Fitch Ratings,1,Other,0.0,4.0,3.0,3.0,3.0,0.0,3.0,1.0
+Fitch Ratings,1,Other,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Chems,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Chems,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Moody's Investors Service,3,Chems,0.0,4.0,3.0,3.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,2,Chems,0.0,4.0,3.0,3.0,3.0,3.0,3.0,1.0
+Fitch Ratings,2,Chems,0.0,4.0,3.0,3.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,2,Money,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Enrgy,0.0,4.0,4.0,3.0,3.0,1.0,3.0,2.0
+Moody's Investors Service,2,Enrgy,0.0,4.0,4.0,3.0,3.0,1.0,3.0,2.0
+Fitch Ratings,1,Other,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,Manuf,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Moody's Investors Service,0,BusEq,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,0,BusEq,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Other,0.0,4.0,2.0,2.0,3.0,1.0,3.0,1.0
+Fitch Ratings,2,Other,0.0,4.0,2.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,Other,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Fitch Ratings,0,Manuf,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,1,Other,1.0,4.0,2.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,3,Other,1.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,3,Other,1.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Fitch Ratings,1,Utils,0.0,4.0,4.0,2.0,3.0,2.0,3.0,1.0
+Fitch Ratings,2,Other,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Shops,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,0,Utils,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+DBRS,0,Durbl,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Other,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Moody's Investors Service,1,Other,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Fitch Ratings,1,Enrgy,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,1,Enrgy,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Other,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Fitch Ratings,2,Manuf,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,0,NoDur,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,0,Hlth,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Hlth,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Durbl,0.0,4.0,2.0,2.0,3.0,3.0,0.0,1.0
+Moody's Investors Service,2,Durbl,0.0,4.0,2.0,2.0,3.0,3.0,0.0,1.0
+Fitch Ratings,1,Chems,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Chems,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,BusEq,1.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Fitch Ratings,1,NoDur,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,Money,0.0,4.0,3.0,2.0,2.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Other,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,1,Chems,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+DBRS,0,Enrgy,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Fitch Ratings,2,Utils,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,Utils,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,1,Enrgy,0.0,4.0,3.0,3.0,3.0,1.0,3.0,0.0
+Fitch Ratings,1,Enrgy,0.0,4.0,3.0,3.0,3.0,1.0,3.0,0.0
+Moody's Investors Service,2,Other,0.0,4.0,3.0,3.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,2,NoDur,0.0,4.0,4.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,1,BusEq,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,0,Hlth,0.0,4.0,4.0,3.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,0,Manuf,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,1,Utils,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,3,Shops,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,3,Enrgy,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Fitch Ratings,0,Enrgy,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,1,Other,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,BusEq,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,BusEq,0.0,4.0,4.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,0,BusEq,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Fitch Ratings,0,BusEq,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Utils,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,0,Durbl,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,0,Manuf,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Chems,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,1,Chems,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Money,3.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,0,BusEq,1.0,4.0,3.0,0.0,0.0,0.0,2.0,1.0
+Moody's Investors Service,2,Enrgy,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Fitch Ratings,1,BusEq,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Fitch Ratings,0,Enrgy,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Fitch Ratings,0,Hlth,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Enrgy,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Enrgy,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Moody's Investors Service,3,NoDur,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Fitch Ratings,2,Enrgy,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,1,Enrgy,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,0,Utils,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,NoDur,0.0,4.0,3.0,2.0,2.0,1.0,2.0,1.0
+Moody's Investors Service,2,Enrgy,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,0,Money,3.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Fitch Ratings,1,Utils,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Fitch Ratings,1,Hlth,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,1,Money,0.0,4.0,2.0,3.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Other,0.0,4.0,4.0,3.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,0,Other,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,3,Shops,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,1,Telcm,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,1,BusEq,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,Money,0.0,3.0,4.0,3.0,3.0,0.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Telcm,0.0,4.0,4.0,2.0,3.0,2.0,3.0,1.0
+Fitch Ratings,0,Telcm,0.0,4.0,4.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,BusEq,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Fitch Ratings,2,BusEq,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Moody's Investors Service,0,Hlth,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,BusEq,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,Chems,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,2,Hlth,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,2,Shops,0.0,4.0,2.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,0,Chems,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Manuf,0.0,4.0,2.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,1,Manuf,0.0,4.0,2.0,2.0,3.0,1.0,3.0,1.0
+Fitch Ratings,2,Manuf,0.0,4.0,2.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Utils,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Fitch Ratings,0,Utils,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+DBRS,0,Shops,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Telcm,0.0,4.0,3.0,2.0,3.0,4.0,2.0,1.0
+Moody's Investors Service,2,Telcm,0.0,4.0,3.0,2.0,3.0,4.0,2.0,1.0
+Moody's Investors Service,0,Hlth,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,Hlth,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Fitch Ratings,1,Telcm,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Fitch Ratings,1,Telcm,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Durbl,0.0,4.0,3.0,3.0,3.0,3.0,3.0,1.0
+Fitch Ratings,2,Hlth,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Fitch Ratings,0,Hlth,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,0,BusEq,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,0,BusEq,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Fitch Ratings,0,BusEq,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Fitch Ratings,1,BusEq,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Fitch Ratings,1,BusEq,0.0,4.0,2.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,Manuf,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Manuf,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Fitch Ratings,2,Manuf,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,NoDur,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Manuf,0.0,4.0,2.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,1,Manuf,0.0,4.0,4.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,0,Other,0.0,4.0,4.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,1,Telcm,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,0,Money,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Hlth,0.0,4.0,4.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Money,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,2,BusEq,0.0,4.0,4.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Money,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Money,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Fitch Ratings,0,Money,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Fitch Ratings,1,Other,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,Manuf,0.0,4.0,2.0,2.0,3.0,4.0,2.0,1.0
+Standard & Poor's Ratings Services,0,Shops,0.0,4.0,3.0,2.0,3.0,4.0,3.0,1.0
+Moody's Investors Service,0,BusEq,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,3,Telcm,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Fitch Ratings,3,Telcm,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,0,Manuf,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,0,Manuf,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,0,Hlth,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,BusEq,0.0,4.0,4.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,0,Shops,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,0,Chems,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,2,NoDur,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,1,NoDur,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,2,Manuf,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,0,Utils,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,1,Utils,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,1,Telcm,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,0,Telcm,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,2,Durbl,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,1,Utils,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,0,Shops,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Egan-Jones Ratings Company,1,Hlth,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,2,BusEq,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,0,BusEq,1.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,0,NoDur,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,0,Enrgy,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,1,NoDur,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Egan-Jones Ratings Company,0,NoDur,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Egan-Jones Ratings Company,1,Shops,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,2,Shops,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Fitch Ratings,1,Manuf,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,1,Manuf,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,1,Utils,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,1,Shops,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,1,Manuf,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,1,Utils,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,0,Utils,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,1,Shops,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Standard & Poor's Ratings Services,2,BusEq,0.0,4.0,2.0,2.0,3.0,3.0,2.0,1.0
+Fitch Ratings,3,BusEq,0.0,4.0,2.0,2.0,3.0,3.0,2.0,1.0
+Moody's Investors Service,2,BusEq,0.0,4.0,2.0,2.0,3.0,3.0,2.0,1.0
+Moody's Investors Service,3,Hlth,0.0,4.0,3.0,2.0,3.0,4.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Other,0.0,4.0,3.0,2.0,3.0,0.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Shops,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Telcm,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Telcm,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Fitch Ratings,1,Telcm,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Fitch Ratings,2,Durbl,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,0,Money,0.0,4.0,4.0,2.0,3.0,0.0,3.0,1.0
+Standard & Poor's Ratings Services,0,BusEq,1.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Fitch Ratings,1,Shops,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,0,Enrgy,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,0,Manuf,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,2,Manuf,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,0,Hlth,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,2,Telcm,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,2,Other,3.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,0,Hlth,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,0,Durbl,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,2,Hlth,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,3,Other,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+DBRS,0,Other,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,3,Other,3.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,3,Other,3.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Fitch Ratings,3,Other,3.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,3,Manuf,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Hlth,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Fitch Ratings,1,Hlth,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,0,NoDur,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,3,Other,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Egan-Jones Ratings Company,1,Chems,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,0,NoDur,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,0,Other,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,1,Manuf,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,1,Manuf,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Shops,0.0,2.0,2.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Shops,0.0,2.0,2.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,2,Shops,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,2,Telcm,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,1,Hlth,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,0,Enrgy,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,2,BusEq,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,0,BusEq,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,0,NoDur,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,2,Other,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,2,Manuf,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,0,Enrgy,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,2,NoDur,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,1,Money,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,0,BusEq,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,2,Money,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Egan-Jones Ratings Company,0,Other,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,0,Shops,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Chems,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Other,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,3,Shops,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,1,Other,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,0,Telcm,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,3,BusEq,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,3,Hlth,0.0,4.0,4.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Other,0.0,4.0,3.0,2.0,3.0,4.0,3.0,1.0
+Moody's Investors Service,3,Durbl,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,0,BusEq,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Money,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Moody's Investors Service,2,Telcm,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,1,Other,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,1,Durbl,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,0,BusEq,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,2,Shops,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,2,Hlth,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,1,NoDur,0.0,4.0,4.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,0,Enrgy,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Egan-Jones Ratings Company,1,NoDur,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,Utils,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,1,Utils,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,0,Utils,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Shops,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Enrgy,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Enrgy,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Moody's Investors Service,1,Enrgy,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Manuf,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,1,Chems,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,0,BusEq,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,1,Chems,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,0,Utils,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,3,Utils,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Egan-Jones Ratings Company,0,BusEq,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,1,BusEq,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,1,BusEq,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,1,Enrgy,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,0,Enrgy,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,1,Utils,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Egan-Jones Ratings Company,0,Other,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,2,Money,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,0,Utils,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,1,Other,0.0,4.0,4.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,0,Other,0.0,4.0,4.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,BusEq,0.0,4.0,2.0,2.0,2.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Other,0.0,4.0,3.0,3.0,3.0,0.0,3.0,1.0
+Moody's Investors Service,1,Hlth,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Fitch Ratings,1,Enrgy,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Telcm,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Other,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,0,Other,0.0,4.0,4.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,2,Chems,0.0,4.0,2.0,2.0,3.0,3.0,2.0,1.0
+Egan-Jones Ratings Company,0,BusEq,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,0,Other,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Egan-Jones Ratings Company,0,Other,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Telcm,0.0,4.0,2.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Chems,0.0,4.0,2.0,2.0,3.0,3.0,2.0,1.0
+Egan-Jones Ratings Company,1,Shops,0.0,4.0,3.0,2.0,3.0,4.0,3.0,1.0
+Egan-Jones Ratings Company,2,Manuf,0.0,4.0,4.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,0,Hlth,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,1,Hlth,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+"Japan Credit Rating Agency,Ltd.",0,Telcm,0.0,4.0,3.0,0.0,1.0,2.0,0.0,1.0
+Moody's Investors Service,3,Other,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,0,Shops,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,2,NoDur,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,0,Durbl,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,1,NoDur,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,2,Hlth,0.0,4.0,4.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,0,Enrgy,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,0,Other,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,0,NoDur,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,3,Other,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,NoDur,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Fitch Ratings,3,Other,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,2,Other,0.0,4.0,3.0,2.0,3.0,0.0,3.0,1.0
+Egan-Jones Ratings Company,1,NoDur,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,0,Money,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,1,Money,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,BusEq,0.0,4.0,3.0,2.0,3.0,4.0,3.0,1.0
+Standard & Poor's Ratings Services,2,BusEq,0.0,4.0,3.0,2.0,3.0,4.0,3.0,1.0
+Egan-Jones Ratings Company,1,BusEq,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Egan-Jones Ratings Company,1,BusEq,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,2,Other,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,0,Hlth,0.0,4.0,4.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,1,BusEq,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,1,BusEq,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,2,Hlth,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,1,Hlth,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Other,0.0,4.0,3.0,3.0,2.0,1.0,3.0,1.0
+Fitch Ratings,0,Utils,0.0,4.0,2.0,2.0,3.0,1.0,3.0,1.0
+Fitch Ratings,2,Chems,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,1,Manuf,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Enrgy,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Chems,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Moody's Investors Service,1,Chems,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Egan-Jones Ratings Company,2,Other,1.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,1,Other,1.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Fitch Ratings,1,Other,1.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Other,1.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,1,Other,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,1,Other,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Egan-Jones Ratings Company,0,Enrgy,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,2,Other,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,1,Other,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Utils,0.0,4.0,4.0,2.0,3.0,2.0,3.0,1.0
+Fitch Ratings,2,Other,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,2,BusEq,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,0,BusEq,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,1,NoDur,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,0,Chems,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,1,Chems,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Fitch Ratings,2,Telcm,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Money,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+DBRS,1,Enrgy,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,1,Enrgy,0.0,4.0,3.0,3.0,3.0,1.0,3.0,2.0
+Egan-Jones Ratings Company,2,Money,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,1,Money,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,3,Hlth,0.0,4.0,4.0,1.0,1.0,0.0,2.0,1.0
+Egan-Jones Ratings Company,2,Hlth,0.0,4.0,4.0,1.0,1.0,0.0,2.0,1.0
+Fitch Ratings,2,Shops,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Egan-Jones Ratings Company,0,BusEq,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,0,Hlth,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,2,Utils,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Enrgy,0.0,4.0,3.0,3.0,3.0,1.0,3.0,2.0
+Moody's Investors Service,1,Enrgy,0.0,4.0,3.0,3.0,3.0,1.0,3.0,2.0
+Standard & Poor's Ratings Services,1,Enrgy,0.0,4.0,3.0,3.0,3.0,1.0,3.0,2.0
+Fitch Ratings,1,Enrgy,0.0,4.0,3.0,3.0,3.0,1.0,3.0,2.0
+Moody's Investors Service,0,Utils,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Fitch Ratings,0,Utils,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Fitch Ratings,0,Shops,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,0,Other,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,1,Utils,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Durbl,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,2,Enrgy,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,3,Enrgy,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,2,Utils,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,2,NoDur,0.0,4.0,2.0,2.0,3.0,4.0,2.0,1.0
+Egan-Jones Ratings Company,1,Enrgy,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+"Japan Credit Rating Agency,Ltd.",0,Manuf,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Enrgy,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,Enrgy,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,NoDur,0.0,4.0,2.0,2.0,3.0,4.0,2.0,1.0
+Fitch Ratings,1,Enrgy,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Egan-Jones Ratings Company,2,Enrgy,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Egan-Jones Ratings Company,0,Money,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,1,Other,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,2,Shops,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Fitch Ratings,2,Shops,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Fitch Ratings,3,Shops,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Fitch Ratings,1,Telcm,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,1,Chems,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,2,Shops,0.0,4.0,2.0,2.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,1,Telcm,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,0,Chems,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,2,Telcm,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,0,Telcm,0.0,4.0,4.0,2.0,3.0,2.0,3.0,1.0
+"Japan Credit Rating Agency,Ltd.",0,Manuf,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,1,Other,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Shops,0.0,4.0,4.0,2.0,3.0,0.0,3.0,1.0
+Egan-Jones Ratings Company,3,BusEq,0.0,4.0,2.0,2.0,3.0,2.0,2.0,1.0
+Fitch Ratings,1,Utils,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Shops,0.0,4.0,2.0,2.0,3.0,1.0,3.0,1.0
+Fitch Ratings,2,Manuf,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,0,Other,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Shops,0.0,4.0,4.0,2.0,3.0,0.0,3.0,1.0
+Egan-Jones Ratings Company,2,Telcm,0.0,4.0,3.0,2.0,2.0,2.0,2.0,1.0
+Egan-Jones Ratings Company,1,Telcm,0.0,4.0,3.0,2.0,2.0,2.0,2.0,1.0
+Standard & Poor's Ratings Services,2,Telcm,0.0,4.0,3.0,2.0,2.0,2.0,2.0,1.0
+Moody's Investors Service,2,Telcm,0.0,4.0,3.0,2.0,2.0,2.0,2.0,1.0
+Standard & Poor's Ratings Services,2,Telcm,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,2,Telcm,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,2,Telcm,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,2,Hlth,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,1,Durbl,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Egan-Jones Ratings Company,1,BusEq,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,Shops,0.0,4.0,3.0,2.0,3.0,2.0,2.0,1.0
+Standard & Poor's Ratings Services,2,Shops,0.0,4.0,3.0,2.0,3.0,2.0,2.0,1.0
+Egan-Jones Ratings Company,1,Other,1.0,4.0,2.0,2.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,2,Utils,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,0,Manuf,0.0,4.0,4.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,2,Hlth,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Fitch Ratings,2,Durbl,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Fitch Ratings,1,Hlth,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Other,1.0,4.0,2.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,3,Manuf,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,3,Manuf,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,1,Utils,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,1,Telcm,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,0,Money,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,2,Hlth,0.0,4.0,4.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Other,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,0,Money,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,2,Money,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,1,Money,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,1,Hlth,0.0,4.0,4.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,2,Other,0.0,4.0,2.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Money,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,0,Shops,0.0,4.0,3.0,2.0,3.0,4.0,3.0,1.0
+Egan-Jones Ratings Company,2,Enrgy,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,1,Enrgy,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,0,Shops,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,2,Utils,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,1,Other,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,1,Other,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Hlth,0.0,4.0,4.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,1,Chems,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,2,BusEq,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,1,Manuf,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,0,Utils,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Fitch Ratings,3,BusEq,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Other,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,0,Utils,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,2,Other,2.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,3,Hlth,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,2,Hlth,0.0,4.0,4.0,2.0,2.0,1.0,2.0,1.0
+Egan-Jones Ratings Company,3,Hlth,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Other,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Fitch Ratings,1,Durbl,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Hlth,0.0,4.0,4.0,2.0,2.0,1.0,2.0,1.0
+Egan-Jones Ratings Company,3,Other,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,1,Enrgy,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,2,Other,0.0,4.0,3.0,2.0,2.0,1.0,2.0,1.0
+Egan-Jones Ratings Company,1,NoDur,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,2,NoDur,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Fitch Ratings,3,Other,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Enrgy,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Fitch Ratings,2,Enrgy,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,Enrgy,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Fitch Ratings,1,Other,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,3,Other,0.0,4.0,3.0,2.0,2.0,1.0,2.0,1.0
+Moody's Investors Service,2,Other,0.0,4.0,3.0,2.0,2.0,1.0,2.0,1.0
+Moody's Investors Service,0,Enrgy,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,NoDur,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,NoDur,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Other,0.0,4.0,4.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,1,Enrgy,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,0,Utils,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Egan-Jones Ratings Company,0,BusEq,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Egan-Jones Ratings Company,3,Utils,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Manuf,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Other,0.0,4.0,3.0,3.0,2.0,0.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Utils,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,2,Chems,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,2,BusEq,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,BusEq,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Hlth,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,2,Manuf,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,3,Hlth,0.0,4.0,4.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Manuf,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,3,Manuf,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+"Japan Credit Rating Agency,Ltd.",0,Telcm,0.0,4.0,3.0,2.0,2.0,2.0,2.0,1.0
+Fitch Ratings,2,Hlth,0.0,4.0,4.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,2,Other,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,3,Other,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Telcm,1.0,4.0,3.0,3.0,3.0,0.0,3.0,1.0
+Moody's Investors Service,2,Telcm,1.0,4.0,3.0,3.0,3.0,0.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Other,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Fitch Ratings,3,Other,0.0,4.0,2.0,2.0,3.0,2.0,3.0,0.0
+Fitch Ratings,2,Other,0.0,4.0,2.0,2.0,3.0,2.0,3.0,0.0
+Egan-Jones Ratings Company,0,Money,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Fitch Ratings,2,Money,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,0,BusEq,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Fitch Ratings,2,Other,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Fitch Ratings,1,Other,0.0,4.0,3.0,3.0,2.0,1.0,3.0,1.0
+Moody's Investors Service,0,Utils,0.0,4.0,2.0,2.0,3.0,1.0,3.0,1.0
+Fitch Ratings,2,Enrgy,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,3,Enrgy,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,3,BusEq,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,0,Manuf,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Egan-Jones Ratings Company,0,Manuf,0.0,4.0,3.0,2.0,3.0,4.0,3.0,1.0
+Egan-Jones Ratings Company,2,Telcm,0.0,4.0,4.0,3.0,4.0,0.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Manuf,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Standard & Poor's Ratings Services,2,NoDur,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,NoDur,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Chems,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,2,Other,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,3,Other,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Fitch Ratings,0,Utils,0.0,4.0,4.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,2,BusEq,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,0,Chems,0.0,4.0,2.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Other,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,BusEq,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,1,Enrgy,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,2,Hlth,0.0,4.0,4.0,2.0,2.0,1.0,1.0,1.0
+Egan-Jones Ratings Company,0,Durbl,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Other,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Fitch Ratings,1,Enrgy,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Durbl,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+DBRS,0,Shops,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,2,Enrgy,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Shops,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+"Japan Credit Rating Agency,Ltd.",0,Telcm,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,0,Durbl,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,2,Enrgy,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,3,Enrgy,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,0,Enrgy,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Egan-Jones Ratings Company,2,NoDur,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Moody's Investors Service,0,Enrgy,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Egan-Jones Ratings Company,0,Money,0.0,4.0,2.0,3.0,3.0,0.0,3.0,1.0
+Standard & Poor's Ratings Services,0,NoDur,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,1,Other,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,1,Money,0.0,4.0,2.0,3.0,3.0,0.0,3.0,1.0
+Moody's Investors Service,2,Money,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Egan-Jones Ratings Company,2,Shops,0.0,4.0,2.0,2.0,3.0,0.0,3.0,1.0
+"Japan Credit Rating Agency,Ltd.",0,Manuf,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,BusEq,0.0,4.0,3.0,2.0,3.0,2.0,2.0,1.0
+Egan-Jones Ratings Company,2,BusEq,0.0,4.0,2.0,2.0,3.0,2.0,2.0,1.0
+Moody's Investors Service,3,BusEq,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,Shops,0.0,4.0,2.0,2.0,3.0,0.0,3.0,1.0
+Moody's Investors Service,2,Manuf,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,2,Telcm,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Telcm,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Telcm,0.0,4.0,3.0,2.0,4.0,2.0,3.0,1.0
+Moody's Investors Service,2,Telcm,0.0,4.0,3.0,2.0,4.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,0,Other,1.0,4.0,2.0,2.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,2,Utils,0.0,4.0,3.0,3.0,3.0,0.0,3.0,1.0
+Moody's Investors Service,2,Durbl,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Durbl,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,3,Telcm,0.0,4.0,4.0,3.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Telcm,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Fitch Ratings,2,Telcm,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,1,Utils,0.0,4.0,3.0,3.0,3.0,0.0,3.0,1.0
+Fitch Ratings,3,Manuf,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,BusEq,1.0,4.0,3.0,2.0,2.0,0.0,2.0,1.0
+Standard & Poor's Ratings Services,1,NoDur,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Fitch Ratings,1,NoDur,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Moody's Investors Service,1,NoDur,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Egan-Jones Ratings Company,2,BusEq,0.0,4.0,2.0,2.0,3.0,3.0,2.0,1.0
+Egan-Jones Ratings Company,0,Money,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Fitch Ratings,1,Hlth,0.0,4.0,4.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,2,Money,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,1,Hlth,0.0,4.0,4.0,2.0,2.0,2.0,2.0,1.0
+Standard & Poor's Ratings Services,2,Money,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Money,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Money,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,1,Money,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,1,Other,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Other,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,0,Other,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,Manuf,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Fitch Ratings,0,BusEq,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Fitch Ratings,1,BusEq,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Egan-Jones Ratings Company,0,Chems,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,2,Chems,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Telcm,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,1,Enrgy,0.0,4.0,4.0,2.0,2.0,0.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Hlth,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,1,BusEq,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,3,BusEq,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Fitch Ratings,1,Chems,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,3,Hlth,0.0,4.0,3.0,2.0,3.0,4.0,2.0,1.0
+Moody's Investors Service,1,Telcm,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Enrgy,0.0,4.0,4.0,2.0,2.0,0.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Enrgy,0.0,4.0,4.0,2.0,2.0,0.0,3.0,1.0
+Moody's Investors Service,1,Enrgy,0.0,4.0,4.0,2.0,2.0,0.0,3.0,1.0
+Fitch Ratings,1,Enrgy,0.0,4.0,4.0,2.0,2.0,0.0,3.0,1.0
+Fitch Ratings,0,NoDur,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,2,Chems,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,1,Hlth,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,2,Hlth,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,3,Hlth,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Other,0.0,4.0,3.0,2.0,2.0,1.0,2.0,1.0
+Moody's Investors Service,1,Other,0.0,4.0,3.0,2.0,2.0,1.0,2.0,1.0
+Standard & Poor's Ratings Services,3,Other,2.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,3,Other,2.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Hlth,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Fitch Ratings,0,Hlth,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Money,0.0,4.0,3.0,3.0,3.0,0.0,3.0,1.0
+DBRS,1,Other,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Other,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Egan-Jones Ratings Company,0,Hlth,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,1,Enrgy,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,2,Enrgy,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,2,Other,0.0,4.0,2.0,1.0,1.0,1.0,2.0,1.0
+Egan-Jones Ratings Company,3,Other,0.0,4.0,2.0,1.0,1.0,1.0,2.0,1.0
+Egan-Jones Ratings Company,2,Manuf,1.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,1,Enrgy,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,Enrgy,0.0,4.0,4.0,2.0,2.0,1.0,3.0,1.0
+Moody's Investors Service,3,Enrgy,0.0,4.0,4.0,2.0,2.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Enrgy,0.0,4.0,4.0,2.0,2.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Manuf,1.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Fitch Ratings,2,Enrgy,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Enrgy,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Fitch Ratings,3,Enrgy,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,3,Enrgy,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Enrgy,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Enrgy,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,0,Enrgy,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Other,0.0,4.0,3.0,4.0,1.0,3.0,3.0,1.0
+Moody's Investors Service,3,Other,0.0,4.0,2.0,1.0,1.0,1.0,2.0,1.0
+Fitch Ratings,0,Telcm,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Fitch Ratings,0,BusEq,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Fitch Ratings,1,NoDur,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Money,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Fitch Ratings,1,Money,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Egan-Jones Ratings Company,2,Shops,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Fitch Ratings,1,BusEq,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,2,Hlth,0.0,4.0,3.0,3.0,3.0,0.0,3.0,1.0
+Egan-Jones Ratings Company,0,Enrgy,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Enrgy,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,0,Enrgy,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,2,Utils,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+DBRS,1,Utils,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Hlth,0.0,4.0,3.0,3.0,3.0,0.0,3.0,1.0
+Egan-Jones Ratings Company,2,Chems,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,1,Other,0.0,4.0,2.0,2.0,3.0,1.0,3.0,1.0
+DBRS,1,BusEq,0.0,4.0,4.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,BusEq,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Standard & Poor's Ratings Services,3,Hlth,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Manuf,0.0,4.0,4.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Shops,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,1,Shops,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,2,Other,0.0,4.0,3.0,3.0,3.0,4.0,3.0,1.0
+Egan-Jones Ratings Company,3,Other,0.0,4.0,2.0,2.0,3.0,2.0,3.0,0.0
+Egan-Jones Ratings Company,2,Other,0.0,4.0,2.0,2.0,3.0,2.0,3.0,0.0
+Moody's Investors Service,0,Durbl,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Telcm,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Fitch Ratings,0,BusEq,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Other,0.0,4.0,3.0,2.0,3.0,4.0,3.0,1.0
+Egan-Jones Ratings Company,1,Other,1.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,0,Other,1.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,0,NoDur,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Other,0.0,4.0,0.0,2.0,2.0,1.0,3.0,1.0
+Moody's Investors Service,2,Other,0.0,4.0,0.0,2.0,2.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,3,Enrgy,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,1,Manuf,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Egan-Jones Ratings Company,2,Telcm,0.0,4.0,4.0,2.0,3.0,0.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Chems,0.0,4.0,2.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,Chems,0.0,4.0,2.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Manuf,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Fitch Ratings,2,Other,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,2,Enrgy,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,2,Manuf,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,0,BusEq,1.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,1,BusEq,1.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,2,BusEq,1.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,0,Chems,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Other,0.0,4.0,3.0,2.0,3.0,0.0,3.0,1.0
+Moody's Investors Service,1,Durbl,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Fitch Ratings,1,Enrgy,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Hlth,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Fitch Ratings,2,Telcm,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,1,Enrgy,0.0,4.0,3.0,2.0,3.0,2.0,3.0,0.0
+Egan-Jones Ratings Company,2,Enrgy,0.0,4.0,3.0,2.0,3.0,2.0,3.0,0.0
+Egan-Jones Ratings Company,0,Utils,0.0,4.0,2.0,3.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,2,Hlth,0.0,4.0,4.0,2.0,3.0,1.0,2.0,1.0
+Egan-Jones Ratings Company,0,BusEq,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Enrgy,0.0,4.0,3.0,2.0,3.0,2.0,3.0,0.0
+Standard & Poor's Ratings Services,1,Enrgy,0.0,4.0,3.0,2.0,3.0,2.0,3.0,0.0
+Moody's Investors Service,3,Utils,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,3,Utils,0.0,4.0,2.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,1,Utils,0.0,4.0,2.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Utils,0.0,4.0,2.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,1,BusEq,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,2,Chems,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Utils,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,3,Enrgy,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,2,Enrgy,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Enrgy,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Enrgy,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,3,Enrgy,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,NoDur,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Fitch Ratings,1,Enrgy,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,1,Enrgy,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,1,Money,0.0,4.0,2.0,3.0,3.0,0.0,3.0,1.0
+Standard & Poor's Ratings Services,1,NoDur,0.0,4.0,4.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,1,Other,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,3,Shops,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,2,Shops,0.0,4.0,2.0,3.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,1,Shops,0.0,4.0,2.0,3.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,0,Chems,0.0,4.0,3.0,2.0,3.0,4.0,3.0,1.0
+Moody's Investors Service,3,BusEq,0.0,4.0,2.0,2.0,3.0,3.0,2.0,1.0
+Egan-Jones Ratings Company,0,Other,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,1,Enrgy,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Shops,0.0,4.0,2.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,0,Chems,0.0,4.0,3.0,2.0,3.0,4.0,3.0,1.0
+Moody's Investors Service,1,Other,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Fitch Ratings,0,Other,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,2,NoDur,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,0,Durbl,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Egan-Jones Ratings Company,1,BusEq,0.0,4.0,2.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,3,Shops,0.0,4.0,3.0,2.0,3.0,2.0,2.0,1.0
+Moody's Investors Service,2,Utils,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Utils,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,1,Other,0.0,4.0,2.0,3.0,3.0,0.0,3.0,1.0
+Moody's Investors Service,2,Other,0.0,4.0,2.0,3.0,3.0,0.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Other,0.0,4.0,2.0,3.0,3.0,0.0,3.0,1.0
+Fitch Ratings,1,Other,0.0,4.0,2.0,3.0,3.0,0.0,3.0,1.0
+Fitch Ratings,2,Other,0.0,4.0,2.0,3.0,3.0,0.0,3.0,1.0
+Moody's Investors Service,2,Durbl,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Durbl,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Fitch Ratings,2,Hlth,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,3,Hlth,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Durbl,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Hlth,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,0,Hlth,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,1,Hlth,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Telcm,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,3,Telcm,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,BusEq,1.0,4.0,4.0,2.0,2.0,1.0,3.0,1.0
+Fitch Ratings,0,Other,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Other,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,0,Other,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Egan-Jones Ratings Company,2,Money,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Fitch Ratings,2,Telcm,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+DBRS,1,Other,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Money,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Fitch Ratings,1,Money,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,1,Money,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Egan-Jones Ratings Company,2,Shops,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Egan-Jones Ratings Company,2,Other,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Fitch Ratings,1,Enrgy,0.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,3,Shops,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,3,Shops,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Utils,0.0,4.0,3.0,3.0,3.0,0.0,3.0,1.0
+Moody's Investors Service,1,Hlth,0.0,4.0,4.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,0,BusEq,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Moody's Investors Service,0,Manuf,0.0,4.0,3.0,3.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,2,Telcm,0.0,3.0,3.0,3.0,3.0,2.0,3.0,1.0
+Fitch Ratings,1,Manuf,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Manuf,0.0,4.0,2.0,2.0,3.0,3.0,2.0,1.0
+Moody's Investors Service,0,Chems,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,3,Hlth,0.0,4.0,3.0,2.0,3.0,4.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Hlth,0.0,4.0,3.0,2.0,3.0,4.0,3.0,1.0
+Fitch Ratings,0,BusEq,0.0,4.0,4.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,0,BusEq,0.0,4.0,4.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,1,Enrgy,0.0,4.0,4.0,1.0,2.0,1.0,2.0,1.0
+Fitch Ratings,1,Enrgy,0.0,4.0,4.0,1.0,2.0,1.0,2.0,1.0
+Standard & Poor's Ratings Services,2,Shops,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Chems,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+DBRS,1,Telcm,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Other,2.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,2,Other,2.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Fitch Ratings,0,Shops,0.0,4.0,3.0,2.0,3.0,4.0,3.0,1.0
+Moody's Investors Service,3,Enrgy,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Chems,0.0,4.0,3.0,3.0,3.0,2.0,3.0,1.0
+Fitch Ratings,1,BusEq,0.0,4.0,4.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,3,Enrgy,0.0,4.0,3.0,1.0,2.0,1.0,2.0,0.0
+Standard & Poor's Ratings Services,3,Enrgy,0.0,4.0,3.0,1.0,2.0,1.0,2.0,0.0
+Standard & Poor's Ratings Services,2,Enrgy,0.0,4.0,4.0,2.0,1.0,0.0,2.0,1.0
+Moody's Investors Service,2,Enrgy,0.0,4.0,4.0,2.0,1.0,0.0,2.0,1.0
+Standard & Poor's Ratings Services,3,Enrgy,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,0,Other,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,1,Enrgy,0.0,4.0,3.0,3.0,3.0,0.0,3.0,1.0
+Standard & Poor's Ratings Services,2,BusEq,0.0,4.0,4.0,3.0,3.0,3.0,3.0,1.0
+DBRS,0,Enrgy,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Telcm,0.0,2.0,3.0,3.0,3.0,1.0,3.0,1.0
+Fitch Ratings,2,Enrgy,0.0,4.0,4.0,1.0,2.0,2.0,2.0,1.0
+Standard & Poor's Ratings Services,2,Enrgy,0.0,4.0,4.0,1.0,2.0,2.0,2.0,1.0
+Standard & Poor's Ratings Services,3,Enrgy,0.0,4.0,4.0,1.0,2.0,2.0,2.0,1.0
+Moody's Investors Service,3,Enrgy,0.0,4.0,4.0,1.0,2.0,2.0,2.0,1.0
+Moody's Investors Service,3,Other,0.0,4.0,2.0,2.0,2.0,3.0,3.0,1.0
+Moody's Investors Service,2,Other,0.0,4.0,2.0,2.0,2.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Enrgy,0.0,4.0,4.0,0.0,0.0,0.0,2.0,0.0
+Standard & Poor's Ratings Services,3,Enrgy,0.0,4.0,4.0,0.0,0.0,0.0,2.0,0.0
+Moody's Investors Service,3,Enrgy,0.0,4.0,4.0,0.0,0.0,0.0,2.0,0.0
+Moody's Investors Service,2,Enrgy,0.0,4.0,4.0,0.0,0.0,0.0,2.0,0.0
+Standard & Poor's Ratings Services,0,Enrgy,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,1,Enrgy,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Fitch Ratings,1,Enrgy,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,3,Telcm,0.0,4.0,4.0,2.0,2.0,1.0,2.0,1.0
+Fitch Ratings,2,BusEq,0.0,4.0,2.0,2.0,3.0,3.0,3.0,1.0
+Fitch Ratings,1,Other,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Enrgy,0.0,4.0,4.0,1.0,2.0,1.0,2.0,1.0
+Moody's Investors Service,2,Enrgy,0.0,4.0,4.0,1.0,2.0,1.0,2.0,1.0
+Standard & Poor's Ratings Services,2,Enrgy,0.0,4.0,4.0,1.0,2.0,0.0,2.0,1.0
+Standard & Poor's Ratings Services,0,Enrgy,0.0,4.0,4.0,2.0,2.0,1.0,2.0,1.0
+Moody's Investors Service,1,Enrgy,0.0,4.0,4.0,2.0,2.0,1.0,2.0,1.0
+Standard & Poor's Ratings Services,2,Other,0.0,4.0,3.0,2.0,0.0,0.0,2.0,1.0
+Moody's Investors Service,2,Other,0.0,4.0,3.0,2.0,0.0,0.0,2.0,1.0
+Moody's Investors Service,1,Other,0.0,4.0,4.0,3.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,1,Other,0.0,4.0,4.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,2,BusEq,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Moody's Investors Service,1,BusEq,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Utils,0.0,4.0,3.0,3.0,3.0,0.0,3.0,1.0
+DBRS,1,Utils,0.0,4.0,3.0,3.0,3.0,0.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Manuf,0.0,4.0,2.0,2.0,3.0,2.0,3.0,0.0
+Moody's Investors Service,2,Manuf,0.0,4.0,2.0,2.0,3.0,2.0,3.0,0.0
+Fitch Ratings,1,Other,0.0,4.0,0.0,2.0,2.0,1.0,2.0,1.0
+Moody's Investors Service,2,Other,0.0,4.0,0.0,2.0,2.0,1.0,2.0,1.0
+Standard & Poor's Ratings Services,3,Hlth,0.0,4.0,4.0,1.0,1.0,0.0,2.0,1.0
+Fitch Ratings,0,Hlth,0.0,4.0,4.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,3,Telcm,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Enrgy,0.0,4.0,4.0,1.0,1.0,0.0,2.0,1.0
+Moody's Investors Service,0,Other,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Fitch Ratings,0,Other,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Other,0.0,4.0,2.0,2.0,2.0,0.0,3.0,1.0
+Moody's Investors Service,3,Other,0.0,4.0,2.0,2.0,2.0,0.0,3.0,1.0
+Moody's Investors Service,2,Other,0.0,4.0,2.0,2.0,2.0,0.0,3.0,1.0
+Fitch Ratings,2,Money,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Other,1.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,1,BusEq,0.0,4.0,4.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Manuf,0.0,4.0,2.0,2.0,3.0,3.0,2.0,1.0
+Standard & Poor's Ratings Services,2,Other,0.0,4.0,1.0,2.0,3.0,1.0,2.0,1.0
+Standard & Poor's Ratings Services,3,Enrgy,0.0,4.0,3.0,2.0,3.0,0.0,3.0,1.0
+Standard & Poor's Ratings Services,1,NoDur,0.0,4.0,3.0,2.0,3.0,0.0,3.0,1.0
+Moody's Investors Service,2,Chems,0.0,4.0,2.0,2.0,3.0,3.0,2.0,1.0
+Standard & Poor's Ratings Services,3,Chems,0.0,4.0,2.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,Hlth,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Hlth,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Enrgy,0.0,4.0,3.0,0.0,0.0,1.0,2.0,0.0
+Moody's Investors Service,2,Enrgy,0.0,4.0,3.0,0.0,0.0,1.0,2.0,0.0
+Moody's Investors Service,1,Manuf,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Other,1.0,4.0,2.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,1,Manuf,0.0,4.0,3.0,2.0,3.0,4.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Durbl,0.0,4.0,2.0,2.0,3.0,4.0,3.0,1.0
+Moody's Investors Service,2,Enrgy,0.0,4.0,4.0,2.0,2.0,0.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Enrgy,0.0,4.0,4.0,1.0,1.0,1.0,2.0,1.0
+Moody's Investors Service,1,BusEq,1.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,1,NoDur,0.0,4.0,3.0,3.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,Utils,0.0,4.0,3.0,2.0,2.0,1.0,2.0,1.0
+Moody's Investors Service,2,Enrgy,0.0,4.0,3.0,2.0,3.0,2.0,3.0,2.0
+Standard & Poor's Ratings Services,1,Enrgy,0.0,4.0,3.0,2.0,3.0,2.0,3.0,2.0
+Fitch Ratings,1,Enrgy,0.0,4.0,3.0,2.0,3.0,2.0,3.0,2.0
+Moody's Investors Service,1,Durbl,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+DBRS,1,Shops,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Utils,0.0,4.0,3.0,3.0,3.0,0.0,3.0,1.0
+Moody's Investors Service,0,Enrgy,0.0,4.0,3.0,2.0,2.0,1.0,2.0,1.0
+Standard & Poor's Ratings Services,2,Other,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Fitch Ratings,0,Chems,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,3,Enrgy,0.0,4.0,2.0,2.0,3.0,2.0,3.0,0.0
+Moody's Investors Service,2,Enrgy,0.0,4.0,2.0,2.0,3.0,2.0,3.0,0.0
+Fitch Ratings,0,Utils,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Moody's Investors Service,3,Enrgy,0.0,4.0,4.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,0,NoDur,0.0,4.0,4.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Enrgy,0.0,4.0,4.0,3.0,2.0,0.0,3.0,1.0
+Moody's Investors Service,2,Enrgy,0.0,4.0,4.0,3.0,2.0,0.0,3.0,1.0
+Moody's Investors Service,1,Money,0.0,4.0,2.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Other,0.0,4.0,4.0,3.0,3.0,3.0,2.0,1.0
+Standard & Poor's Ratings Services,2,BusEq,0.0,4.0,3.0,3.0,3.0,0.0,3.0,1.0
+Moody's Investors Service,3,Shops,0.0,4.0,4.0,2.0,3.0,0.0,3.0,1.0
+Moody's Investors Service,1,Shops,0.0,4.0,2.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Chems,0.0,4.0,3.0,2.0,3.0,4.0,3.0,1.0
+Fitch Ratings,2,Shops,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,2,Utils,0.0,4.0,4.0,1.0,2.0,1.0,2.0,1.0
+Fitch Ratings,2,Utils,0.0,4.0,4.0,1.0,2.0,1.0,2.0,1.0
+Standard & Poor's Ratings Services,0,Other,0.0,4.0,4.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,0,Other,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,Utils,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Moody's Investors Service,3,Other,0.0,4.0,2.0,2.0,3.0,1.0,3.0,1.0
+DBRS,2,Other,0.0,4.0,2.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,Telcm,0.0,4.0,4.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,1,Telcm,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Fitch Ratings,1,Telcm,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,3,Hlth,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Durbl,0.0,4.0,2.0,2.0,3.0,2.0,2.0,1.0
+Standard & Poor's Ratings Services,1,Hlth,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,Manuf,0.0,4.0,2.0,2.0,3.0,2.0,2.0,1.0
+Standard & Poor's Ratings Services,2,BusEq,1.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,1,Other,1.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,0,Other,1.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Fitch Ratings,1,Hlth,0.0,4.0,4.0,2.0,3.0,3.0,3.0,1.0
+Moody's Investors Service,2,Telcm,0.0,4.0,4.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,Other,0.0,4.0,2.0,2.0,2.0,1.0,2.0,1.0
+DBRS,1,Other,0.0,4.0,2.0,2.0,2.0,1.0,2.0,1.0
+Moody's Investors Service,2,Money,0.0,4.0,3.0,2.0,3.0,3.0,3.0,1.0
+Fitch Ratings,1,Telcm,0.0,4.0,3.0,2.0,3.0,4.0,3.0,1.0
+Moody's Investors Service,1,Telcm,0.0,4.0,3.0,2.0,3.0,4.0,3.0,1.0
+Fitch Ratings,1,Other,0.0,4.0,2.0,2.0,3.0,1.0,3.0,1.0
+Fitch Ratings,2,Enrgy,0.0,4.0,2.0,2.0,3.0,2.0,2.0,1.0
+Fitch Ratings,1,Chems,0.0,4.0,3.0,2.0,3.0,2.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Utils,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Moody's Investors Service,2,Utils,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Fitch Ratings,2,Utils,0.0,4.0,4.0,3.0,3.0,0.0,3.0,1.0
+Fitch Ratings,1,Other,0.0,4.0,3.0,2.0,3.0,1.0,3.0,1.0
+Moody's Investors Service,2,Enrgy,0.0,4.0,2.0,3.0,3.0,1.0,3.0,1.0
+Standard & Poor's Ratings Services,2,Other,0.0,4.0,3.0,2.0,2.0,0.0,3.0,1.0
